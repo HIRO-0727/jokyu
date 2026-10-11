@@ -62,6 +62,14 @@ img {
     }
 }
 
+.main {
+    margin-top: vw(50, 375);
+
+    @include pc {
+        margin-top: hvw(80);
+    }
+}
+
 .qa-bg {
     background: rgba($color-main, 0.102);
 }
