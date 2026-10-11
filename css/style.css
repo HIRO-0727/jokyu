@@ -399,6 +399,11 @@ img {
     font-size: 1.7rem;
     line-height: 1.9411764706;
     color: #000;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  .header__nav ul li a:hover {
+    opacity: 0.7;
   }
 }
 @media (min-width: 768px) {

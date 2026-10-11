@@ -151,6 +151,7 @@
             flex-direction: row;
             // justify-content: space-between;
             column-gap: hvw(33);
+
         }
         li a {
             width: 100%;
@@ -170,6 +171,11 @@
                 font-size: 1.7rem;
                 line-height: calc(33 / 17);
                 color: #000;
+                transition: opacity 0.4s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
             }
         }
         .header__nav-contact {
