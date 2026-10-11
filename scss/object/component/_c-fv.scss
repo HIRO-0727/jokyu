@@ -12,23 +12,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding-top: vw(8, 375);
+        // padding-top: vw(8, 375);
         text-align: center;
-        background: rgba(#505050, 0.502);
+        // background: rgba(#505050, 0.502);
 
-        // @include pc {
-        //     padding-top: vw(10, 1080);
-        // }
-        h2 {
-            font-size: vw(30, 375);
-            font-weight: 700;
-            line-height: calc(50 / 30);
-            color: #fff;
+    }
+    &__catch {
+        font-weight: 700;
+        color: #fff;
 
-            @include pc {
-                font-size: hvw(40);
-                line-height: calc(60 / 40);
-            }
-        }
     }
 }
