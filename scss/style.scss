@@ -1,0 +1,14 @@
+// resetの読み込み
+@use '../scss/foundation/reset';
+
+// baseの読み込み
+@use '../scss/foundation/base';
+
+// componentの読み込み
+@use 'object/component';
+
+// pageの読み込み
+@use 'object/project';
+
+// layoutの読み込み
+@use '../scss/layout/index'

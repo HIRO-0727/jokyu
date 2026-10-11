@@ -1,0 +1,67 @@
+
+@use '../foundation/variable' as *;
+@use '../foundation/mixin' as *;
+
+html {
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-text-size-adjust: 100%;
+    word-break: break-all;
+    font-size: 10px;
+    scroll-behavior: smooth;
+
+    //リキッドレイアウトの設定
+    @media (min-width: 768px) and (max-width: 940px) {
+        // font-size: calc(10 / 940 * 100vw);
+        font-size: vw(10, 940);
+    }
+    @include sp {
+        font-size: vw(10, 375);
+    }
+}
+
+body {
+    font-family: $font-sans;
+    font-size: 1.6rem;
+    line-height: calc(30 / 16);
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0;
+}
+
+// PC,SPの表示・非常時
+@include sp {
+    .pc {
+   display: none !important;
+  }
+}
+
+@include pc {
+    .sp {
+   display: none !important;
+  }
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.inner {
+    width: 88rem;
+    margin: 0 auto;
+    @include sp {
+        width: 33.5rem; //左右に2remずつのマージンを確保
+
+    }
+}
+
+.qa-bg {
+    background: rgba($color-main, 0.102);
+}

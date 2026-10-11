@@ -1,0 +1,37 @@
+# ログファイル除外
+*.log
+
+# macOSの不要な隠しファイル
+.DS_Store
+
+# Windows生成ファイル除外
+Thumbs.db
+
+# VSCodeワークスペースファイル
+*.code-workspace
+
+# VSCodeの個人設定フォルダ
+.vscode
+
+# マークダウンファイル除外
+*.md
+
+# アプリケーションファイル除外
+*.app
+*.exe
+*.war
+
+# サイズが大きいメディアファイル除外
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# node_modulesフォルダを除外
+node_modules
+
+# ビルドファイル除外
+dist
+assets
