@@ -53,23 +53,6 @@ img {
     overflow: hidden;
 }
 
-.inner {
-    width: 88rem;
-    margin: 0 auto;
-    @include sp {
-        width: 33.5rem; //左右に2remずつのマージンを確保
-
-    }
-}
-
-.main {
-    margin-top: vw(50, 375);
-
-    @include pc {
-        margin-top: hvw(80);
-    }
-}
-
 .qa-bg {
     background: rgba($color-main, 0.102);
 }

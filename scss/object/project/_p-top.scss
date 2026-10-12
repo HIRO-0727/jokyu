@@ -3,12 +3,12 @@
 
 // FVセクション
 
-.fv__contents-top {
+.p-top__fv-contents {
     padding-top: vw(8, 375);
     background: rgba(#505050, 0.502);
 }
 
-.fv__catch-top {
+.p-top__fv-catch {
     font-size: vw(30, 375);
     line-height: calc(50 / 30);
 
@@ -16,17 +16,4 @@
         font-size: hvw(40);
         line-height: calc(60 / 40);
     }
-}
-
-// Visionセクション
-.vision {
-    padding-top: 4.6rem;
-    padding-bottom: 3.4rem;
-}
-.t-section__title-vision {
-    font-size: vw(25, 375);
-    line-height: calc(50 / 25);
-    font-weight: 700;
-    color: $color-main;
-    text-align: center;
 }
