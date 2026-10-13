@@ -27,6 +27,11 @@ body {
     font-weight: 500;
     color: #000;
     letter-spacing: 0;
+
+    @include pc {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+    }
 }
 
 // PC,SPの表示・非常時
