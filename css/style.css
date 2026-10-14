@@ -716,4 +716,122 @@ img {
 
 .p-top-bg {
   background: #CB0000;
+}
+
+.p-top-reason {
+  padding-top: 4.9rem;
+  padding-bottom: 3.9rem;
+}
+@media (min-width: 768px) {
+  .p-top-reason {
+    padding-top: 6.4rem;
+    padding-bottom: 9rem;
+  }
+}
+
+.p-top-reason__contents {
+  margin-top: 3.6rem;
+}
+@media (min-width: 768px) {
+  .p-top-reason__contents {
+    margin-top: 2.8rem;
+  }
+}
+
+.p-top-reason__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 3.9rem;
+}
+@media (min-width: 768px) {
+  .p-top-reason__contents {
+    row-gap: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-top-reason__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+}
+
+.p-top-reason__image {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .p-top-reason__image {
+    width: 35rem;
+    height: auto;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+}
+
+.p-top-reason__textarea {
+  width: 100%;
+  margin-top: 3rem;
+}
+@media (min-width: 768px) {
+  .p-top-reason__textarea {
+    width: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    margin-top: 0;
+  }
+}
+
+.p-top-reason__title {
+  padding-bottom: 0.9rem;
+  border-bottom: solid 0.2rem #CB0000;
+}
+@media (min-width: 768px) {
+  .p-top-reason__title {
+    padding-left: 5rem;
+  }
+}
+.p-top-reason__title h3 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .p-top-reason__title h3 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-top-reason__title--1 {
+    margin-top: 0.7rem;
+    padding-bottom: 1.1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-top-reason__title--2 {
+    margin-top: -0.2rem;
+  }
+}
+
+.p-top-reason__desc {
+  margin-top: 1.6rem;
+}
+@media (min-width: 768px) {
+  .p-top-reason__desc {
+    margin-top: 3.7rem;
+    padding-left: 5rem;
+    line-height: 1.8333333333;
+  }
 }/*# sourceMappingURL=style.css.map */
