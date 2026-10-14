@@ -942,4 +942,123 @@ img {
 .p-top-voice__arrow:focus-visible {
   outline: 2px solid #fff;
   outline-offset: 4px;
+}
+
+.p-top-flow {
+  padding-top: 4.6rem;
+  padding-bottom: 5.5rem;
+}
+@media (min-width: 768px) {
+  .p-top-flow {
+    padding-top: 3.4rem;
+    padding-bottom: 9.05rem;
+  }
+}
+
+.p-top-flow__contents {
+  position: relative;
+  margin-top: 3.6rem;
+  padding-left: 4.8rem;
+}
+.p-top-flow__contents::before {
+  content: "";
+  position: absolute;
+  top: 1.65rem;
+  bottom: 4.7rem;
+  left: 1.8rem;
+  width: 0.3rem;
+  background-color: #CB0000;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  pointer-events: none;
+}
+@media (min-width: 768px) {
+  .p-top-flow__contents::before {
+    left: 6.1rem;
+    bottom: 4.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-top-flow__contents {
+    margin-top: 5.3rem;
+    padding-left: 12.1rem;
+  }
+}
+
+.p-top-flow__arrow {
+  position: absolute;
+  bottom: 4.5rem;
+  left: 0.2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 3.3rem;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 1;
+}
+@media (min-width: 768px) {
+  .p-top-flow__arrow {
+    left: 4.5rem;
+    bottom: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .p-top-flow__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 3.8rem;
+       -moz-column-gap: 3.8rem;
+            column-gap: 3.8rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.p-top-flow__title {
+  position: relative;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+  width: 15.4rem;
+  color: #CB0000;
+}
+.p-top-flow__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #CB0000;
+  -webkit-transform: translate(-200%, -50%);
+          transform: translate(-200%, -50%);
+}
+@media (min-width: 768px) {
+  .p-top-flow__title::after {
+    -webkit-transform: translate(-350%, -50%);
+            transform: translate(-350%, -50%);
+  }
+}
+
+.p-top-flow__desc {
+  margin-top: 0.9rem;
+  padding-bottom: 3.6rem;
+}
+@media (min-width: 768px) {
+  .p-top-flow__desc {
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
+    margin-top: 0;
+    padding-bottom: 5.8rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
