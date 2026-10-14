@@ -834,4 +834,112 @@ img {
     padding-left: 5rem;
     line-height: 1.8333333333;
   }
+}
+
+.p-top-voice {
+  padding-top: 4.6rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .p-top-voice {
+    padding-top: 4.4rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.p-top-voice__slider {
+  --voice-image-height: calc(33.5rem * 200 / 335);
+  --voice-slide-gap: 0rem;
+  position: relative;
+  margin-top: 3.9rem;
+}
+@media (min-width: 768px) {
+  .p-top-voice__slider {
+    --voice-image-height: 19rem;
+    --voice-slide-gap: 3.5rem;
+    margin-top: 3.6rem;
+  }
+}
+
+.p-top-voice .swiper-slide {
+  margin-top: 0;
+}
+
+.p-top-voice .swiper-slide__image > picture {
+  display: block;
+}
+.p-top-voice .swiper-slide__image > picture > img {
+  aspect-ratio: 335/200;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px) {
+  .p-top-voice .swiper-slide__image > picture > img {
+    width: 100%;
+    height: 19rem;
+  }
+}
+
+.swiper-slide__text {
+  margin-top: 2.7rem;
+}
+@media (min-width: 768px) {
+  .swiper-slide__text {
+    margin-top: 1.7rem;
+  }
+}
+
+.swiper-slide__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+}
+
+.swiper-slide__desc {
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.6666666667;
+  color: #fff;
+}
+
+.p-top-voice__arrow {
+  position: absolute;
+  top: calc(var(--voice-image-height) - 3.716rem - 2.984rem);
+  z-index: 2;
+  display: block;
+  width: 2.8rem;
+  height: 3.7rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.p-top-voice__arrow > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.p-top-voice__arrow--prev {
+  left: 0;
+}
+@media (min-width: 768px) {
+  .p-top-voice__arrow--prev {
+    left: auto;
+    right: calc(100% + 1.876rem);
+  }
+}
+.p-top-voice__arrow--next {
+  right: 0;
+}
+@media (min-width: 768px) {
+  .p-top-voice__arrow--next {
+    right: auto;
+    left: calc(100% + 1.876rem);
+  }
+}
+.p-top-voice__arrow:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
 }/*# sourceMappingURL=style.css.map */

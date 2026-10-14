@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>きたむらミュージックスクール</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Google FontsからNoto Sans JPを読み込む -->
@@ -198,14 +200,119 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- お客様の声セクション -->
+                <section class="p-top-voice p-top-bg">
+                    <div class="l-inner">
+                        <div class="p-top__section-title p-top__section-title--color">
+                            <h2>
+                                生徒さんたちの声
+                            </h2>
+                        </div>
+                        <div class="p-top-voice__slider">
+                            <div class="swiper infinite-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="swiper-slide__image">
+                                            <picture>
+                                                <source media="(min-width: 768px)" srcset="./img/01_top/voice01_pc.jpg">
+                                                <img src="./img/01_top/voice01_sp.jpg" alt="丸山さん">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide__text">
+                                            <div class="swiper-slide__title">
+                                                <h3>証券会社勤務　丸山さん</h3>
+                                            </div>
+                                            <div class="swiper-slide__desc">
+                                                <p>
+                                                    昔やっていた音楽活動で、副収入が得られるようになったので、毎日充実するようになりました。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-slide__image">
+                                            <picture>
+                                                <source media="(min-width: 768px)" srcset="./img/01_top/voice02_pc.jpg">
+                                                <img src="./img/01_top/voice02_pc.jpg" alt="S.Eさん">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide__text">
+                                            <div class="swiper-slide__title">
+                                                <h3>IT会社勤務　S.Eさん</h3>
+                                            </div>
+                                            <div class="swiper-slide__desc">
+                                                <p>
+                                                    プロの指導が受けられるので、技術が確実に上がるし、音楽への考え方とかも勉強できて最高です。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-slide__image">
+                                            <picture>
+                                                <source media="(min-width: 768px)" srcset="./img/01_top/voice03_pc.jpg">
+                                                <img src="./img/01_top/voice03_pc.jpg" alt="田森さん">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide__text">
+                                            <div class="swiper-slide__title">
+                                                <h3>都内大学生　田森さん</h3>
+                                            </div>
+                                            <div class="swiper-slide__desc">
+                                                <p>
+                                                    就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="swiper-slide__image">
+                                            <picture>
+                                                <source media="(min-width: 768px)" srcset="./img/01_top/voice04_pc.jpg">
+                                                <img src="./img/01_top/voice04_pc.jpg" alt="S.Eさん">
+                                            </picture>
+                                        </div>
+                                        <div class="swiper-slide__text">
+                                            <div class="swiper-slide__title">
+                                                <h3>タイトルが入ります</h3>
+                                            </div>
+                                            <div class="swiper-slide__desc">
+                                                <p>
+                                                    就職する前にビジネスの事が学べるし、好きな音楽で稼げるようになったので選択肢が増えました。
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="p-top-voice__arrow p-top-voice__arrow--prev" type="button" aria-label="前のスライドへ">
+                                <img src="./img/01_top/voice_arrow1.svg" alt="">
+                            </button>
+                            <button class="p-top-voice__arrow p-top-voice__arrow--next" type="button" aria-label="次のスライドへ">
+                                <img src="./img/01_top/voice_arrow2.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    
+                </section>
             </div>
         </main>
         <footer>
             <div class="l-footer"></div>
         </footer>
     </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1200,
+        easing: "ease-out",
+        once: true,
+    });
+    </script>
 </body>
 </html>
