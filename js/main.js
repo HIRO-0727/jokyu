@@ -61,3 +61,11 @@ $(function() {
 
 });
 
+// アコーディオン開閉
+
+$('.p-top-faq__answer').css('display', 'flex').hide();
+
+$('.p-top-faq__question').on('click', function(){
+  $(this).toggleClass('active');
+  $(this).next().slideToggle();
+});
