@@ -1,0 +1,63 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.p-plan-price {
+    padding-top: 4.6rem;
+    margin-inline: 2rem;
+
+    @include pc {
+        padding-top: 6.7rem;
+        margin-inline: 9.6rem;
+    }
+
+    &__contents {
+        margin-top: 3.9rem;
+
+        @include pc {
+            margin-top: 3.8rem;
+        }
+    }
+
+    &__fee {
+        font-size: 2rem;
+        line-height: calc(33 / 20);
+        font-weight: 700;
+        color: #fff;
+        background: $color-main;
+
+        width: 21rem;
+        height: 6rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__plus {
+        width: 1.9rem;
+        height: auto;
+    }
+
+    &__fig {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        align-items: center;
+        justify-content: center;
+
+        @include pc {
+            flex-direction: row;
+            column-gap: 3rem;
+
+        }
+    }
+
+    &__desc {
+        margin-top: 4.7rem;
+
+        @include pc {
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
+        }
+    }
+}
