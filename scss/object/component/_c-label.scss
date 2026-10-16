@@ -1,0 +1,16 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.c-label {
+    font-size: 1.5rem;
+    line-height: calc(25 / 15);
+    font-weight: 700;
+    color: #fff;
+
+    height: 3rem;
+    background: $color-main;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
