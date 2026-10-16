@@ -521,16 +521,36 @@ img {
 }
 @media (min-width: 768px) {
   .p-header__nav ul li a {
+    position: relative;
     height: min(7.4074074074vw, 80px);
     padding-left: 0;
     font-size: 1.7rem;
     line-height: 1.9411764706;
     color: #000;
-    -webkit-transition: opacity 0.4s;
-    transition: opacity 0.4s;
   }
-  .p-header__nav ul li a:hover {
-    opacity: 0.7;
+}
+@media (min-width: 768px) {
+  .p-header__nav ul li:not(.p-header__nav-item--contact) a::after {
+    background-color: #000;
+    content: "";
+    height: 0.1rem;
+    left: 0;
+    position: absolute;
+    top: calc(50% + 0.9rem + 0.4rem);
+    bottom: auto;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left top;
+            transform-origin: left top;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
+    width: 100%;
+  }
+  .p-header__nav ul li:not(.p-header__nav-item--contact) a:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
 }
 @media (min-width: 768px) {
@@ -549,6 +569,11 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  .p-header__nav ul .p-header__nav-item--contact a:hover {
+    opacity: 0.7;
   }
 }
 
@@ -1461,4 +1486,59 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.p-plan-fv {
+  position: relative;
+}
+.p-plan-fv__contents {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-top: 2.1333333333vw;
+  background: rgba(80, 80, 80, 0.4863);
+}
+.p-plan-fv__catch {
+  font-weight: 700;
+  color: #fff;
+  font-size: 6.6666666667vw;
+  line-height: 2.4;
+}
+@media (min-width: 768px) {
+  .p-plan-fv__catch {
+    font-size: min(2.3148148148vw, 25px);
+  }
+}
+
+.p-plan-breadcrumb {
+  background: #E8E8E8;
+  width: 100%;
+  height: 3.6rem;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.0625;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  .p-plan-breadcrumb {
+    height: 5rem;
+    padding-left: 10rem;
+  }
 }/*# sourceMappingURL=style.css.map */

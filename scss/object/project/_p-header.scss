@@ -153,18 +153,39 @@
             font-weight: 700;
 
             @include pc {
+                position: relative;
                 height: hvw(80);
                 padding-left: 0;
                 font-size: 1.7rem;
                 line-height: calc(33 / 17);
                 color: #000;
-                transition: opacity 0.4s;
+            }
+        }
 
-                &:hover {
-                    opacity: 0.7;
+        li:not(.p-header__nav-item--contact) a {
+            @include pc {
+                &::after {
+                    background-color: #000;
+                    content: "";
+                    height: 0.1rem;
+                    left: 0;
+                    position: absolute;
+
+                    top: calc(50% + 0.9rem + 0.4rem);
+                    bottom: auto;
+                    
+                    transform: scaleX(0);
+                    transform-origin: left top;
+                    transition: transform 0.4s;
+                    width: 100%;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
                 }
             }
         }
+
         .p-header__nav-item--contact {
             @include pc {
                 width: 15rem;
@@ -176,10 +197,14 @@
                     color: #fff;
                     display: flex;
                     align-items: center;
+
+                    transition: opacity 0.4s;
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
                 }
-
             }
-
         }
     }
 }
