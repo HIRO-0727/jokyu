@@ -1,0 +1,10 @@
+@use '../foundation/mixin' as *;
+
+.l-inquiry {
+    display: flex;
+    justify-content: center;
+
+    @include pc {
+        justify-content: flex-end;
+    }
+}
