@@ -69,3 +69,14 @@ $('.p-top-faq__question').on('click', function(){
   $(this).toggleClass('active');
   $(this).next().slideToggle();
 });
+
+// トップへ戻るボタン
+$(window).scroll(function() {
+    const scrollTop = $(this).scrollTop();
+
+    if(scrollTop > 100) {
+        $('.c-top').addClass('active');
+    } else {
+        $('.c-top').removeClass('active');
+    }
+});

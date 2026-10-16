@@ -278,6 +278,34 @@ img {
   }
 }
 
+.c-top {
+  width: 6.8rem;
+  height: 6.8rem;
+  position: fixed;
+  bottom: 38.1rem;
+  right: 2rem;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.4s, visibility 0.4s;
+  transition: opacity 0.4s, visibility 0.4s;
+}
+@media (min-width: 768px) {
+  .c-top {
+    bottom: 36.4rem;
+    right: 11.6rem;
+  }
+}
+.c-top.active {
+  opacity: 1;
+  visibility: visible;
+}
+@media (min-width: 768px) {
+  .c-top:hover {
+    opacity: 0.7;
+  }
+}
+
 .c-label {
   font-size: 1.5rem;
   line-height: 1.6666666667;

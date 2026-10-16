@@ -1,6 +1,7 @@
 @use '../../foundation/mixin' as *;
 @use '../../foundation/variable' as *;
 
+// お問い合わせボタン
 .c-inquiry {
     display: flex;
     align-items: center;
@@ -20,4 +21,33 @@
         width: 30rem;
     }
 
+}
+
+// トップへ戻るボタン
+.c-top {
+    width: 6.8rem;
+    height: 6.8rem;
+    position: fixed;
+    bottom: 38.1rem;
+    right: 2rem;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+    
+    @include pc {
+        bottom: 36.4rem;
+        right: 11.6rem;
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:hover {
+        @media (min-width: 768px) {
+            opacity: 0.7;
+        }
+    }
 }
