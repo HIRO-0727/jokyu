@@ -3,11 +3,11 @@
 
 .p-plan-price {
     padding-top: 4.6rem;
-    margin-inline: 2rem;
+    padding-inline: 2rem;
 
     @include pc {
         padding-top: 6.7rem;
-        margin-inline: 9.6rem;
+        padding-inline: 9.6rem;
     }
 
     &__contents {

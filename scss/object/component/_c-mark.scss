@@ -1,0 +1,31 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.c-plan-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #000;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: currentColor;
+    }
+
+    &--red {
+        color: $color-main;
+    }
+
+    &--dash {
+    &::before {
+        width: 30px;
+        height: 1px;
+        border-radius: 0;
+    }
+}
+}

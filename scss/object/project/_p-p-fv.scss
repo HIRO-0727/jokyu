@@ -16,6 +16,10 @@
         text-align: center;
         padding-top: vw(8, 375);
         background: rgba(#505050, 0.4863);
+
+        @include pc {
+            padding-top: 0;
+        }
     }
     &__catch {
         font-weight: 700;
@@ -25,6 +29,7 @@
 
         @include pc {
             font-size: hvw(25);
+            padding-top: hvw(4);
         }
     }
 }
