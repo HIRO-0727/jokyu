@@ -40,6 +40,16 @@
         right: 11.6rem;
     }
 
+    &--2 {
+        bottom: 32.1rem;
+        right: 3rem;
+
+        @include pc {
+            bottom: 30.4rem;
+            right: 10rem;
+        }
+    }
+
     &.active {
         opacity: 1;
         visibility: visible;
