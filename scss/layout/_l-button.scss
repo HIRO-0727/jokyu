@@ -8,3 +8,12 @@
         justify-content: flex-end;
     }
 }
+
+.l-home__button {
+    margin-top: 3.9rem;
+    margin-inline: auto;
+
+    @include pc {
+        margin-top: 4rem;
+    }
+}
