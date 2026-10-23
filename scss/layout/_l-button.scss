@@ -16,4 +16,13 @@
     @include pc {
         margin-top: 4rem;
     }
+
+    &--404 {
+        margin-top: 0.9rem;
+        margin-inline: auto;
+
+        @include pc {
+            margin-top: 4rem;
+        }
+    }
 }

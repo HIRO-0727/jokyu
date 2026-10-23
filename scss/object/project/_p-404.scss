@@ -1,0 +1,32 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.p-404 {
+    padding-top: 4.7rem;
+    padding-bottom: 5rem;
+
+    @include pc {
+        padding-top: 6.8rem;
+        padding-bottom: 9rem;
+    }
+
+    &__lead {
+        @include pc {
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
+            text-align: center;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -262,6 +262,15 @@ img {
     margin-top: 4rem;
   }
 }
+.l-home__button--404 {
+  margin-top: 0.9rem;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .l-home__button--404 {
+    margin-top: 4rem;
+  }
+}
 
 .c-inquiry {
   display: -webkit-box;
@@ -3154,6 +3163,24 @@ input[type=email]::placeholder {
 }
 @media (min-width: 768px) {
   .p-thanks__lead {
+    font-size: 1.8rem;
+    line-height: 1.6666666667;
+    text-align: center;
+  }
+}
+
+.p-404 {
+  padding-top: 4.7rem;
+  padding-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .p-404 {
+    padding-top: 6.8rem;
+    padding-bottom: 9rem;
+  }
+}
+@media (min-width: 768px) {
+  .p-404__lead {
     font-size: 1.8rem;
     line-height: 1.6666666667;
     text-align: center;
