@@ -2,7 +2,9 @@
 @use '../../foundation/variable' as *;
 
 .p-blog-sidebar {
-    padding-top: 3.01rem;
+    padding-top: 2.8rem;
+    padding-bottom: 13.7rem;
+
     display: flex;
     flex-direction: column;
     row-gap: 3rem;
@@ -19,11 +21,11 @@
         border-style: solid;
         border-color: #000;
         border-width: 0.1rem;
-        padding: 2rem;
+        padding: 1.9rem;
 
         @include pc {
             height: 20rem;
-            padding: 1.5rem;
+            padding: 1.4rem;
         }
     }
 
@@ -39,6 +41,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        // padding-bottom: 0.3rem;
     }
 
     &__search-contents {
@@ -120,6 +124,10 @@
     &__recommend-item {
         display: flex;
         column-gap: 2rem;
+
+        @include pc {
+            column-gap: 1.5rem;
+        }
     }
 
     &__recommend-image {
@@ -139,11 +147,15 @@
         line-height: calc(28 / 17);
         flex: 1;
         padding-top: 0.85rem;
+
+        @include pc {
+            padding-top: 0;
+        }
         
     }
 
     &__category {
-        padding-bottom: 13.7rem;
+        // padding-bottom: 13.7rem;
 
         @include pc {
             padding-bottom: 0;
@@ -168,6 +180,8 @@
 
         display: flex;
         align-items: center;
+
+        padding-top: 0.6rem;
 
     }
 
