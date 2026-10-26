@@ -26,5 +26,10 @@
     align-items: center;
     justify-content: center;
 
-    
+    &--related {
+        @include pc {
+            justify-content: flex-start;
+            padding-left: 3rem;
+        }
+    }
 }

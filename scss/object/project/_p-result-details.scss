@@ -142,8 +142,7 @@
         }
     }
 
-    // 前後の記事・関連記事
-
+    // 前後の記事・関連記事のページ固有調整
     &__reference {
         margin-top: 4rem;
 
@@ -152,112 +151,32 @@
         }
     }
 
-    &__prevnext {
-        display: flex;
-        column-gap: 2.2rem;
-
+    &__navigation {
         @include pc {
             column-gap: 20rem;
         }
     }
 
-    &__prevnext-contents {
-        @include pc {
-            margin-top: 1.6rem;
-            display: flex;
-            column-gap: 1.6rem;
-        }
-    }
-
-    &__prevnext-label {
-        width: 15.6rem;
-        height: 3.7rem;
-        font-size: 1.7rem;
-        line-height: calc(30 / 17);
-        color: #fff;
-        background: #000;
-
-        display: flex;
-        align-items: center;
-
+    &__navigation-label {
         @include pc {
             width: 34rem;
         }
 
-        &--prev {
-            padding-left: 2rem;
-        }
-
         &--next {
-            padding-left: 4.8rem;
-
             @include pc {
                 padding-left: 23.2rem;
             }
         }
     }
 
-    &__prevnext-image {
-        display: none;
-
+    &__navigation-title {
         @include pc {
-            display: block;
-            width: 9.8rem;
-            flex-shrink: 0;
-        }
-    }
-
-    &__prevnext-title {
-        margin-top: 1.5rem;
-        width: 15.6rem;
-        height: 6.8rem;
-        line-height: calc(25 / 16);
-        font-weight: 700;
-        flex: 1;
-
-        @include pc {
-            font-size: 1.6rem;
             width: 22.6rem;
-            height: 6.8rem;
-            margin-top: 0;
-        }
-    }
-
-    //関連記事
-    &__related {
-        margin-top: 7.1rem;
-
-        @include pc {
-            margin-top: 10rem;
-        }
-    }
-
-    &__related-contents {
-        margin-top: 2rem;
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
-
-        @include pc {
-            margin-top: 3rem;
-            row-gap: 3rem;
-        }
-    }
-
-    &__related-item {
-        display: flex;
-        column-gap: 2rem;
-
-        @include pc {
-            column-gap: 3rem;
         }
     }
 
     &__related-image {
-        position: relative;
-        width: 16rem;
         aspect-ratio: 160 / 113;
-        flex-shrink: 0;
 
         @include pc {
             width: 26rem;
@@ -265,49 +184,9 @@
         }
     }
 
-    &__caption--related {
-        width: 8rem;
-
+    &__related-label {
         @include pc {
             width: 10rem;
         }
     }
-
-    &__related-text {
-        flex: 1;
-    }
-
-    &__related-desc {
-        font-size: 1.7rem;
-        line-height: calc(28 / 17);
-        font-weight: 700;
-
-        @include pc {
-            font-size: 2rem;
-            line-height: calc(25 / 20);
-        }
-    }
-
-    &__related-date {
-        margin-top: 0.39rem;
-        font-size: 1.7rem;
-        line-height: calc(30 / 17);
-
-        @include pc {
-            margin-top: 1.3rem;
-            padding-left: 0.4rem;
-        }
-    }
 }
-
-.c-title-banner--related {
-    @include pc {
-        justify-content: flex-start;
-        padding-left: 3rem;
-    }
-}
-
-
-
-
-

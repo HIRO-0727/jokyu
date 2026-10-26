@@ -1,0 +1,75 @@
+@use '../../foundation/mixin' as *;
+
+.p-related-posts {
+    margin-top: 7.1rem;
+
+    @include pc {
+        margin-top: 10rem;
+    }
+
+    &__contents {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+
+        @include pc {
+            margin-top: 3rem;
+            row-gap: 3rem;
+        }
+    }
+
+    &__item {
+        display: flex;
+        column-gap: 2rem;
+
+        @include pc {
+            column-gap: 3rem;
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 16rem;
+        height: auto;
+        flex-shrink: 0;
+
+        @include pc {
+            width: 20rem;
+        }
+    }
+
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 8rem;
+    }
+
+    &__text {
+        flex: 1;
+    }
+
+    &__title {
+        font-size: 1.7rem;
+        line-height: calc(28 / 17);
+        font-weight: 700;
+
+        @include pc {
+            font-size: 2rem;
+            line-height: calc(25 / 20);
+        }
+    }
+
+    &__date {
+        margin-top: 0.39rem;
+        font-size: 1.7rem;
+        line-height: calc(30 / 17);
+
+        @include pc {
+            margin-top: 1.3rem;
+            padding-left: 0.4rem;
+        }
+    }
+}
