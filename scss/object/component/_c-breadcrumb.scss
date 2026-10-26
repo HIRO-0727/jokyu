@@ -15,10 +15,24 @@
     @include pc {
         height: 5rem;
         padding-left: 10rem;
+        padding-top: 0.3rem;
     }
 }
 
 .c-breadcrumb--tall {
     height: 5.9rem;
     line-height: calc(24 / 16);
+
+    @include pc {
+        height: 5rem;
+    }
+}
+
+.c-breadcrumb--ultra-tall {
+    height: 7.7rem;
+    line-height: calc(20 / 16);
+
+    @include pc {
+        height: 5rem;
+    }
 }
