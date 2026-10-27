@@ -70,15 +70,39 @@ $('.p-top-faq__question').on('click', function(){
   $(this).next().slideToggle();
 });
 
-// トップへ戻るボタン
-$(window).scroll(function() {
-    const scrollTop = $(this).scrollTop();
+// お問い合わせ・トップへ戻るボタン
+$(function() {
+    const actions = document.querySelector('.p-footer-actions');
+    const footer = document.querySelector('footer');
+    const $standaloneTop = $('.c-top').not('.p-footer-actions__top');
 
-    if(scrollTop > 100) {
-        $('.c-top').addClass('active');
-    } else {
-        $('.c-top').removeClass('active');
+    function updateFooterActions() {
+        const isVisible = window.scrollY > 100;
+
+        $('.p-footer-actions').toggleClass('active', isVisible);
+        $standaloneTop.toggleClass('active', isVisible);
+
+        // お問い合わせボタンがないページは単独ボタンの表示だけを更新
+        if (!actions || !footer) {
+            return;
+        }
+
+        const footerTop = footer.getBoundingClientRect().top;
+        const overlap = Math.max(0, window.innerHeight - footerTop);
+
+        actions.style.bottom = `${overlap}px`;
     }
+
+    $(window).on('scroll resize load', updateFooterActions);
+
+    if (actions && footer) {
+        const observer = new ResizeObserver(updateFooterActions);
+
+        observer.observe(footer);
+        observer.observe(document.body);
+    }
+
+    updateFooterActions();
 });
 
 // Planページの横スクロールバー

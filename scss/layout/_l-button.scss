@@ -1,12 +1,8 @@
 @use '../foundation/mixin' as *;
 
 .l-inquiry {
-    display: flex;
-    justify-content: center;
-
-    @include pc {
-        justify-content: flex-end;
-    }
+    // 固定配置にしたボタンの高さをページ内に残す
+    height: 6rem;
 }
 
 .l-home__button {
