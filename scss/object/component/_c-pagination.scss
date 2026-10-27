@@ -42,4 +42,30 @@
             }
         }
     }
+
+    &--large {
+        column-gap: 1rem;
+
+        .c-pagination__number {
+            width: 5rem;
+            height: 5rem;
+            font-size: 1.8rem;
+            line-height: calc(30 / 18);
+
+            padding-top: 0.4rem;
+
+            @include pc {
+                padding-top: 0;
+            }
+        }
+
+        .c-pagination__number--ellipsis {
+            width: 3.8rem;
+            padding-top: 0.8rem;
+
+            @include pc {
+                padding-top: 0;
+            }
+        }
+    }
 }

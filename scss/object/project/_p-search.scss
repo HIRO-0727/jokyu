@@ -8,13 +8,11 @@
     }
 
     &__results {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        
         display: flex;
         justify-content: space-between;
-
-        @include pc {
-            font-size: 1.8rem;
-            line-height: calc(30 / 18);
-        }
     }
 
     &__bold {

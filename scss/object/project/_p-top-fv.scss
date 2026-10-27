@@ -14,8 +14,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        padding-top: vw(8, 375);
+        padding-top: vw(12, 375);
         background: rgba(#505050, 0.502);
+
+        @include pc {
+            padding-top: 1.5rem;
+        }
     }
     &__catch {
         font-weight: 700;
