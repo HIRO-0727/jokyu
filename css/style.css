@@ -2255,7 +2255,7 @@ img {
 }
 @media (min-width: 768px) {
   .p-article-list {
-    row-gap: 7rem;
+    row-gap: 6.98rem;
   }
 }
 @media (min-width: 768px) {
