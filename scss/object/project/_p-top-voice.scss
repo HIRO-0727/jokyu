@@ -43,7 +43,19 @@
             @include pc {
                 width: 100%; // 横幅はSwiperが計算する値とする
                 height: 19rem;
+                transform-origin: center center;
+                transition: transform 0.4s ease;
+
+                
             }
+        }
+    }
+
+    @include pc {
+        overflow: visible;
+
+        &:hover > picture > img {
+            transform: scale(1.1);
         }
     }
 }
