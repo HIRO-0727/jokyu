@@ -1762,6 +1762,16 @@ img {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .p-footer__nav-link {
+    -webkit-transform: opacity 0.4s;
+            transform: opacity 0.4s;
+  }
+  .p-footer__nav-link:hover {
+    opacity: 0.7;
+  }
+}
+
 .p-footer__logo {
   margin-top: 1.874rem;
   width: 3.203rem;
@@ -1811,6 +1821,15 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+@media (min-width: 768px) {
+  .p-footer__sns-link {
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  .p-footer__sns-link:hover {
+    opacity: 0.7;
+  }
 }
 
 .p-footer-actions {
