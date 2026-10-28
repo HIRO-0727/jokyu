@@ -2063,6 +2063,9 @@ img {
     grid-template-rows: 3rem 5rem repeat(6, 8.5rem);
   }
 }
+.p-plan-monthly__row {
+  display: contents;
+}
 .p-plan-monthly__cell {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3668,4 +3671,5 @@ input[type=email]::placeholder {
   .p-result-detail__related-label {
     width: 10rem;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

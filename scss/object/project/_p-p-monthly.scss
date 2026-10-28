@@ -114,6 +114,11 @@
     }
 }
 
+    // 行の構造を保ちながら、セルを既存のGridで配置する
+    &__row {
+        display: contents;
+    }
+
     &__cell {
         display: flex;
         align-items: center;
