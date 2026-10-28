@@ -1764,8 +1764,8 @@ img {
 
 @media (min-width: 768px) {
   .p-footer__nav-link {
-    -webkit-transform: opacity 0.4s;
-            transform: opacity 0.4s;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
   }
   .p-footer__nav-link:hover {
     opacity: 0.7;

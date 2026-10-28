@@ -20,21 +20,21 @@
     <div id="container">
         <header>
             <div class="l-header p-header">
-                <h1 class="p-header__logo">
+                <div class="p-header__logo">
                     <a href="./index.html" class="p-header__logo-link">
                         <span class="p-header__logo-image">
-                            <img src="./img/01_top/logo_pc.svg" alt="logo">
+                            <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
                         </span>
-                        <div class="p-header__logo-name">
-                            <p class="p-header__logo-upper">
+                        <h1 class="p-header__logo-name">
+                            <span class="p-header__logo-upper">
                                 きたむら
-                            </p>
-                            <p class="p-header__logo-lower">
+                            </span>
+                            <span class="p-header__logo-lower">
                                 ミュージックスクール
-                            </p>
-                        </div>
+                            </span>
+                        </h1>
                     </a>
-                </h1>
+                </div>
                 <div class="p-header__hamburger sp">
                     <div class="p-header__hamburger-inner">
                         <span></span>
@@ -96,18 +96,18 @@
                                     <img src="./img/01_top/vision02_pc.svg" alt="arrow">
                                 </div>
                                 <div class="p-top-vision__list">
-                                    <div class="p-top-vision__item">
+                                    <dl class="p-top-vision__item">
                                         <dt class="p-top-vision__eng">Enthusiasm</dt>
                                         <dd class="p-top-vision__jpn">熱狂し</dd>
-                                    </div>
-                                    <div class="p-top-vision__item">
+                                    </dl>
+                                    <dl class="p-top-vision__item">
                                         <dt class="p-top-vision__eng">Envision</dt>
                                         <dd class="p-top-vision__jpn">想像し</dd>
-                                    </div>
-                                    <div class="p-top-vision__item">
+                                    </dl>
+                                    <dl class="p-top-vision__item">
                                         <dt class="p-top-vision__eng">Effulgent</dt>
                                         <dd class="p-top-vision__jpn">輝く存在へ</dd>
-                                    </div>
+                                    </dl>
                                 </div>
                             </div>
                         </div>
@@ -290,10 +290,10 @@
                                 </div>
                             </div>
                             <button class="p-top-voice__arrow p-top-voice__arrow--prev" type="button" aria-label="前のスライドへ">
-                                <img src="./img/01_top/voice_arrow1.svg" alt="">
+                                <img src="./img/01_top/voice_arrow1.svg" alt="previous">
                             </button>
                             <button class="p-top-voice__arrow p-top-voice__arrow--next" type="button" aria-label="次のスライドへ">
-                                <img src="./img/01_top/voice_arrow2.svg" alt="">
+                                <img src="./img/01_top/voice_arrow2.svg" alt="next">
                             </button>
                         </div>
                     </div>
@@ -490,9 +490,9 @@
                                         </h3>
                                     </div>
                                     <div class="p-top-blog__date">
-                                        <date>
+                                        <span>
                                             0000.00.00
-                                        </date>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
@@ -516,13 +516,13 @@
                                         </h3>
                                     </div>
                                     <div class="p-top-blog__date">
-                                        <date>
+                                        <span>
                                             0000.00.00
-                                        </date>
+                                        </span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="p-top-blog__item">
+                            <a class="p-top-blog__item" href="./blog_details.html">
                                 <div class="p-top-blog__image">
                                     <picture>
                                         <source media="(min-width: 768px)" srcset="./img/01_top/blog03_pc.jpg">
@@ -542,15 +542,15 @@
                                         </h3>
                                     </div>
                                     <div class="p-top-blog__date">
-                                        <date>
+                                        <span>
                                             0000.00.00
-                                        </date>
+                                        </span>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
                         <div class="p-top-blog__link">
-                            <a href="#">ブログ一覧へ</a>
+                            <a href="./blog_list.html">ブログ一覧へ</a>
                         </div>
                     </div>
                 </div>
@@ -634,13 +634,5 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/aos.js"></script>
-    <script>
-    AOS.init({
-        duration: 1200,
-        easing: "ease-out",
-        once: true,
-    });
-    </script>
 </body>
 </html>
