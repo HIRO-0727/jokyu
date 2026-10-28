@@ -1,0 +1,192 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.p-blog-sidebar {
+    padding-top: 2.8rem;
+    padding-bottom: 13.7rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    @include pc {
+        padding-top: 0;
+        width: 25rem;
+    }
+
+    &__mailmag-contents {
+        position: relative;
+        width: 100%;
+        height: 26.8rem;
+        border-style: solid;
+        border-color: #000;
+        border-width: 0.1rem;
+        padding: 1.9rem;
+
+        @include pc {
+            height: 20rem;
+            padding: 1.4rem;
+        }
+    }
+
+    &__mailmag-adbanner {
+        width: 100%;
+        height: 100%;
+        background: #e8e8e8;
+
+        font-size: 1.8rem;
+        font-weight: 700;
+        line-height: calc(33 / 18);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // padding-bottom: 0.3rem;
+    }
+
+    &__search-contents {
+        position: relative;
+        width: 100%;
+        height: 9.3rem;
+        border-style: solid;
+        border-color: #000;
+        border-width: 0.1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include pc {
+            height: 7.1rem;
+        }
+    }
+
+    &__search-item {
+        display: flex;
+        column-gap: 0;
+
+    }
+
+    &__search-window {
+        width: 24.1rem;
+        height: 5.4rem;
+        background: #e8e8e8;
+        flex-shrink: 0;
+
+        @include pc {
+            width: 18rem;
+            height: 4rem;
+        }
+    }
+
+    &__search-button {
+        // position: relative;
+        width: 5.4rem;
+        height: 5.4rem;
+        background: #000;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        @include pc {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+
+    &__search-icon {
+        width: 2.623rem;
+        height: auto;
+        flex-shrink: 0;
+
+        @include pc {
+            width: 1.98rem;
+            height: auto;
+        }
+    }
+
+    &__recommend-contents {
+        margin-top: 2.06rem;
+        
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.05rem;
+
+        @include pc {
+            margin-top: 1.5rem;
+            row-gap: 1.5rem;
+        }
+    }
+
+    &__recommend-item {
+        display: flex;
+        column-gap: 2rem;
+
+        @include pc {
+            column-gap: 1.5rem;
+        }
+    }
+
+    &__recommend-image {
+        width: 16rem;
+        height: 11rem;
+        background: #e8e8e8;
+        flex-shrink: 0;
+
+        @include pc {
+            width: 9.5rem;
+            height: 7.5rem;
+        }
+    }
+
+    &__recommend-desc {
+        font-size: 1.7rem;
+        line-height: calc(28 / 17);
+        flex: 1;
+        padding-top: 0.85rem;
+
+        @include pc {
+            padding-top: 0;
+        }
+        
+    }
+
+    &__category {
+        // padding-bottom: 13.7rem;
+
+        @include pc {
+            padding-bottom: 0;
+        }
+    }
+
+    &__category-contents {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+        
+    }
+
+    &__category-item {
+        width: 100%;
+        height: 4.7rem;
+
+        font-size: 1.7rem;
+        line-height: calc(28 / 17);
+
+        border-bottom: solid #000 0.1rem;
+
+        display: flex;
+        align-items: center;
+
+        padding-top: 0.6rem;
+
+    }
+
+}
+
+
+
+

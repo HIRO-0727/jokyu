@@ -1,0 +1,127 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.p-top-voice {
+    padding-top: 4.6rem;
+    padding-bottom: 5rem;
+
+    @include pc {
+        padding-top: 4.4rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.p-top-voice__slider {
+    --voice-image-height: calc(33.5rem * 200 / 335);
+
+    // スライドの間隔はJSから参照する
+    --voice-slide-gap: 0rem;
+
+    position: relative;
+    margin-top: 3.9rem;
+
+    @include pc {
+        --voice-image-height: 19rem;
+        --voice-slide-gap: 3.5rem;
+        margin-top: 3.6rem;
+    }
+    
+}
+
+.p-top-voice .swiper-slide {
+    margin-top: 0;
+}
+
+.p-top-voice .swiper-slide__image {
+    > picture {
+        display: block;
+
+        > img {
+            aspect-ratio: 335 / 200;
+            object-fit: cover;
+
+            @include pc {
+                width: 100%; // 横幅はSwiperが計算する値とする
+                height: 19rem;
+                transform-origin: center center;
+                transition: transform 0.4s ease;
+
+                
+            }
+        }
+    }
+
+    @include pc {
+        overflow: visible;
+
+        &:hover > picture > img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.swiper-slide__text {
+    margin-top: 2.7rem;
+
+    @include pc {
+        margin-top: 1.7rem;
+    }
+}
+
+.swiper-slide__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: calc(33 / 22);
+    color: #fff;
+    text-align: center;
+}
+
+.swiper-slide__desc {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    line-height: calc(30 / 18);
+    color: #fff;
+}
+
+.p-top-voice__arrow {
+    position: absolute;
+    top: calc(var(--voice-image-height) - 3.716rem - 2.984rem);
+    z-index: 2;
+
+    display: block;
+    width: 2.8rem;
+    height: 3.7rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+
+    > img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &--prev {
+        left: 0;
+
+        @include pc {
+            left: auto;
+            right: calc(100% + 1.876rem); // インナー左端からボタン右端までの距離
+        }
+    }
+
+    &--next {
+        right: 0;
+
+        @include pc {
+            right: auto;
+            left: calc(100% + 1.876rem); // インナー右端からボタン左端までの距離
+        }
+    }
+
+    &:focus-visible {
+        outline: 2px solid #fff;
+        outline-offset: 4px;
+    }
+}

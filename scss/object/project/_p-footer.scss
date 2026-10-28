@@ -1,0 +1,89 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-footer {
+    background: $color-main;
+}
+
+.p-footer__nav-list {
+    padding-inline: 2.1rem;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3rem;
+
+    @include pc {
+        padding-inline: 28.9rem;
+    }
+}
+
+.p-footer__nav-item {
+    font-size: 1.7rem;
+    line-height: calc(33 / 17);
+    font-weight: 700;
+    color: #fff;
+}
+
+.p-footer__nav-link {
+    @include pc {
+        transition: opacity 0.4s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.p-footer__logo {
+    margin-top: 1.874rem;
+    width: 3.203rem;
+    height: auto;
+    margin-inline: auto;
+
+    @include pc {
+        margin-top: 2.17rem;
+    }
+}
+
+.p-footer__copyright {
+    margin-top: 2.89rem;
+    font-size: 1.5rem;
+    line-height: calc(20 / 15);
+    text-align: center;
+    color: #fff;
+
+    @include pc {
+        margin-top: 2.3rem;
+        line-height: calc(33 / 15);
+    }
+}
+
+.p-footer__sns {
+    margin-top: 1.6rem;
+    margin-inline: auto;
+    width: 12.38rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include pc {
+        margin-top: 0;
+    }
+
+   
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    &-link {
+        @include pc {
+            transition: opacity 0.4s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
+}

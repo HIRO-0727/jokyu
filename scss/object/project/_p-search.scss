@@ -1,0 +1,35 @@
+@use '../../foundation/mixin' as *;
+
+.p-search {
+    padding-top: 3.6rem;
+
+    @include pc {
+        padding-top: 6.6rem;
+    }
+
+    &__results {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bold {
+        font-weight: 700;
+    }
+
+    &__contents {
+        margin-top: 4.2rem;
+    }
+
+    &__pagination {
+        margin-top: 5.9rem;
+        margin-bottom: 14.3rem;
+
+        @include pc {
+            margin-top: 7rem;
+            margin-bottom: 15rem;
+        }
+    }
+}

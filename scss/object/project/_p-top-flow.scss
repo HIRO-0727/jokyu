@@ -1,0 +1,118 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.p-top-flow {
+    padding-top: 4.6rem;
+    padding-bottom: 1.9rem;
+
+    @include pc {
+        padding-top: 3.4rem;
+        padding-bottom: 4.97rem;
+    }
+}
+
+.p-top-flow__contents {
+    position: relative;
+    margin-top: 3.6rem;
+    padding-left: 4.8rem;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 1.65rem;
+        bottom: 4.7rem;
+        left: 1.8rem;
+        width: 0.3rem;
+        background-color: $color-main;
+        transform: translateX(-50%);
+        pointer-events: none;
+
+        @include pc {
+            left: 6.1rem;
+            bottom: 4.4rem;
+        }
+    }
+
+    @include pc {
+        margin-top: 5.3rem;
+        padding-left: 12.1rem;
+    }
+}
+
+.p-top-flow__arrow {
+    position: absolute;
+    bottom: 4.5rem;
+    // left: calc(50% + 0.126rem);
+    left: 0.2rem;
+    transform: translateX(-50%);
+    transform: rotate(180deg);
+    width: 3.3rem;
+    height: auto;
+    object-fit: contain;
+    z-index: 1;
+
+    @include pc {
+        left: 4.5rem;
+        bottom: 4rem;
+    }
+}
+
+.p-top-flow__item {
+    @include pc {
+        display: flex;
+        column-gap: 3.8rem;
+        align-items: flex-start;
+    }
+}
+
+.p-top-flow__title {
+    position: relative;
+    font-size: 2.2rem;
+    line-height: calc(33 / 22);
+    font-weight: 700;
+    width: 15.4rem;
+    color: $color-main;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 50%;
+    //     // bottom: calc(0rem - var(--vision-gap));
+    //     bottom: -11.6rem;
+    //     left: -3.3rem;
+    //     width: 0.3rem;
+    //     background-color: $color-main;
+    //     transform: translateX(50%);
+    // }
+
+    
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: $color-main;
+        transform: translate(-200%, -50%);
+
+        @include pc {
+            transform: translate(-350%, -50%);
+
+        }
+    }
+}
+
+.p-top-flow__desc {
+    margin-top: 0.9rem;
+    padding-bottom: 3.6rem;
+
+    @include pc {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+        margin-top: 0;
+        padding-bottom: 5.8rem;
+        flex: 1;
+    }
+}

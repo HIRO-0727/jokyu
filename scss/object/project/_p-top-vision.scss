@@ -1,0 +1,177 @@
+@use '../../foundation/variable' as *;
+@use '../../foundation/mixin' as *;
+
+.p-top-vision {
+    padding-top: 4.6rem;
+    padding-bottom: 3.4rem;
+
+    @include pc {
+        padding-top: 6.6rem;
+        padding-bottom: 5.5rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        line-height: calc(40 / 25);
+        font-weight: 700;
+        color: $color-main;
+        text-align: center;
+
+        @include pc {
+            // font-size: hvw(35);
+            font-size: 3.5rem;
+            line-height: calc(50 / 35);
+        }
+    }
+
+    &__contents {
+        margin-top: 0.7rem;
+
+        @include pc {
+            margin-top: 1.7rem;
+        }
+    }
+
+    &__desc {
+        font-size: 1.8rem;
+        line-height: calc(30 / 18);
+
+        @include pc {
+            text-align: center;
+        }
+    }
+
+    &__image {
+        display: block;
+        margin-top: 2rem;
+        width: 100%;
+
+        @include pc {
+            margin-top: 3.4rem;
+        }
+    }
+
+    &__goal {
+        position: relative;
+        width: 100%;
+        margin-top: 0.3rem;
+
+        @include pc {
+            margin-top: -0.7rem;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 0;
+        left: calc(50% + 0.126rem);
+        transform: translateX(-50%);
+        width: 3.05rem;
+        height: auto;
+        object-fit: contain;
+        z-index: 1;
+
+        @include pc {
+            width: 3.162rem;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding-top: 3rem;
+
+        @include pc {
+            padding-top: 2.5rem;
+        }
+    }
+
+    &__item {
+        --vision-gap: 0;
+        
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        min-height: 0;
+        margin-bottom: var(--vision-gap);
+
+        &:nth-child(1) {
+            --vision-gap: 1.7rem;
+        }
+
+        &:nth-child(2) {
+            --vision-gap: 2rem;
+        }
+    }
+
+    &__eng,
+    &__jpn {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        font-size: 2rem;
+        line-height: calc(50 / 20);
+
+        @include pc {
+            font-size: 2.5rem;
+            line-height: calc(50 / 25);
+        }
+    }
+
+    &__eng {
+        position: relative;
+        justify-content: flex-end;
+        padding-right: 3.8rem;
+        font-weight: 700;
+        color: $color-main;
+        text-align: right;
+
+        @include pc {
+            padding-right: 4.1rem;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: calc(0rem - var(--vision-gap));
+            right: 0;
+            width: 0.3rem;
+            background-color: $color-main;
+            transform: translateX(50%);
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            background-color: $color-main;
+            transform: translate(50%, -50%);
+        }
+    }
+
+    &__jpn {
+        padding-left: 4.15rem;
+        text-align: left;
+
+        @include pc {
+            padding-left: 3.95rem;
+            font-size: 2.3rem;
+            line-height: calc(50 / 23);
+        }
+    }
+
+    &__item:first-child &__eng::before {
+        top: -2.8rem;
+
+        @include pc {
+            top: -2.4rem;
+        }
+    }
+
+    &__item:last-child &__eng::before {
+        bottom: 50%;
+    }
+}

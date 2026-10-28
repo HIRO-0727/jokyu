@@ -1,0 +1,50 @@
+@use '../../foundation/mixin' as *;
+
+.p-footer-actions {
+    --top-gap: 1.825rem;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.4s, visibility 0.4s;
+
+    @include pc {
+        --top-gap: 2.927rem;
+    }
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+
+        .c-inquiry,
+        .p-footer-actions__top {
+            pointer-events: auto;
+        }
+    }
+
+    &__inquiry {
+        display: flex;
+        justify-content: center;
+
+        @include pc {
+            justify-content: flex-end;
+        }
+    }
+
+    &__top {
+        position: absolute;
+        bottom: calc(100% + var(--top-gap));
+        right: 2rem;
+        opacity: 1;
+        visibility: inherit;
+
+        @include pc {
+            right: 11.6rem;
+        }
+    }
+}

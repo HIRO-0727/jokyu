@@ -1,0 +1,24 @@
+@use '../foundation/mixin' as *;
+
+.l-inquiry {
+    // 固定配置にしたボタンの高さをページ内に残す
+    height: 6rem;
+}
+
+.l-home__button {
+    margin-top: 3.9rem;
+    margin-inline: auto;
+
+    @include pc {
+        margin-top: 4rem;
+    }
+
+    &--404 {
+        margin-top: 0.9rem;
+        margin-inline: auto;
+
+        @include pc {
+            margin-top: 4rem;
+        }
+    }
+}

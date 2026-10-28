@@ -1,192 +1,25 @@
 @use '../foundation/mixin' as *;
-@use '../foundation/variable' as *;
 
-.header {
+.l-header {
     width: 100%;
-    height: 5rem;
-    background: #fcc;
-    padding-left: 3rem;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include pc {
-        height: 8rem;
-        padding-inline: 10rem;
-    }
 }
 
-.header__logo {
-    height: inherit;
-}
+.l-header__nav {
+    position: fixed;
+    top: 5rem;
+    right: -120%;
 
-.header__logo-link {
-    height: inherit;
-    font-size: 1.3rem;
-    font-weight: 700;
-    line-height: calc(14 / 13);
-    display: flex;
-    align-items: center;
-    column-gap: 0.632rem;
-}
-
-.header__logo a {
-    @include pc {
-        transition: opacity 0.4s;
-    }
-
-    @include pc {
-        &:hover {
-            opacity: 0.7;
-        }
-    }
-}
-
-.header__logo-name {
-    display: flex;
-    align-items: center;
-
-    @include pc {
-        flex-direction: column;
-        align-items: flex-start;
-
-        .header__logo-upper {
-            font-size: 2rem;
-            font-weight: 700;
-            line-height: calc(23 / 20);
-        }
-        .header__logo-lower {
-            font-size: 1.5rem;
-            font-weight: 700;
-            line-height: calc(23 / 15);
-        }
-
-    }
-}
-
-.header__logo-image {
-    width: 2.03rem;
-    height: 3.13rem;
-    flex-shrink: 0;
-
-    @include pc {
-        width: 3.2rem;
-        height: 4.94rem;
-    }
-}
-
-// ハンバーガーメニュー
-.header__hb {
-        width: 7.1rem;
-        height: 100%;
-        background: $color-main;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        &-inner {
-            width: 3.2rem;
-            height: 2.8rem;
-            position: relative;
-            span {
-                width: 100%;
-                height: 0.4rem;
-                background: #fff;
-                border-radius: 0.2rem;
-                position: absolute;
-                left: 0;
-                transition: all 0.4s;
-                &:nth-last-of-type(1) {
-                    top: 0;
-                }
-                &:nth-last-of-type(2) {
-                    top: 1.2rem;
-                }
-                &:nth-last-of-type(3) {
-                    top: 2.4rem;
-                }
-            }
-        }
-        &.active {
-            span {
-                &:nth-last-of-type(1) {
-                    top: 1.2rem;
-                    transform: rotate(45deg);
-                }
-                &:nth-last-of-type(2) {
-                    display: none;
-                }
-                &:nth-last-of-type(3) {
-                    top: 1.2rem;
-                    transform: rotate(-45deg);
-                }
-            }
-        }
-}
-
-.header__nav {
-    @include sp {
-        width: 30rem;
-        position: fixed;
-        top: 5rem;
+    &.active {
         right: 0;
-        right: -120%;
-        background: $color-main;
-        transition: all 1s;
-
-        &.active {
-        right: 0;
-        }
     }
 
-    ul {
-        @include pc {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            // justify-content: space-between;
-            column-gap: hvw(33);
-        }
-        li a {
-            width: 100%;
-            height: 5.8rem;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            padding-left: 2rem;
-            font-size: 1.8rem;
-            line-height: calc(33 / 18);
-            color: #fff;
-            font-weight: 700;
-
-            @include pc {
-                height: hvw(80);
-                padding-left: 0;
-                font-size: 1.7rem;
-                line-height: calc(33 / 17);
-                color: #000;
-            }
-        }
-        .header__nav-contact {
-            @include pc {
-                width: 15rem;
-                height: 4.5rem;
-                background: $color-main;
-                a {
-                    height: 100%;
-                    font-size: 1.5rem;
-                    color: #fff;
-                    display: flex;
-                    align-items: center;
-                }
-                
-            }
-            
-        }
+    @include pc {
+        position: static;
+        top: auto;
+        right: auto;
     }
 }

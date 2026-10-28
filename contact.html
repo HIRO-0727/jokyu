@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>きたむらミュージックスクール</title>
+    <link rel="icon" href="./img/01_top/logo_pc.svg" type="image/svg+xml">
+    <meta name="description" content="きたむらミュージックスクールの公式サイトです。">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google FontsからNoto Sans JPを読み込む -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="l-header p-header">
+                <div class="p-header__logo">
+                    <a href="./index.html" class="p-header__logo-link">
+                        <span class="p-header__logo-image">
+                            <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
+                        </span>
+                        <h1 class="p-header__logo-name">
+                            <span class="p-header__logo-upper">
+                                きたむら
+                            </span>
+                            <span class="p-header__logo-lower">
+                                ミュージックスクール
+                            </span>
+                        </h1>
+                    </a>
+                </div>
+                <div class="p-header__hamburger sp">
+                    <div class="p-header__hamburger-inner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <nav class="l-header__nav p-header__nav">
+                    <ul>
+                        <li class="p-header__nav-item">
+                            <a href="./plan.html">料金</a>
+                        </li>
+                        <li class="p-header__nav-item">
+                            <a href="./blog_list.html">ブログ</a>
+                        </li>
+                        <li class="p-header__nav-item">
+                            <a href="./result_list.html">卒業実績</a>
+                        </li>
+                        <li class="p-header__nav-item p-header__nav-item--contact">
+                            <a href="./contact.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="p-contact__main">
+            <div class="l-main">
+                <!-- FVセクション -->
+                <div class="c-fv">
+                    <div class="c-fv__image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/05_contact/contact-fv-pc.jpg">
+                            <img src="./img/05_contact/contact-fv-sp.jpg" alt="お問い合わせ">
+                        </picture>
+                    </div>
+                    <div class="c-fv__contents">
+                        <h2 class="c-fv__catch">お問い合わせ</h2>
+                    </div>
+                    
+                </div>
+                <div class="c-breadcrumb">
+                    <p>
+                        ホーム&emsp;＞&emsp;お問い合わせ
+                    </p>
+                </div>
+
+                <!-- イントロ -->
+                <section class="p-contact">
+                    <div class="l-inner">
+                        <div class="p-contact__lead">
+                            <p>
+                                当校に関するご質問・ご相談・資料請求は下記のフォームからお気軽にお問い合わせください。<br>
+                                通常３営業日以内にメールにてご連絡させていただきます。
+                            </p>
+                        </div>
+
+                        <!-- お問い合わせフォーム -->
+                        <div class="p-contact__form">
+                            <form>
+                                <div class="p-contact__contents-01">
+                                    <dl class="p-contact__item">
+                                        <dt class="p-contact__label">
+                                            <label for="company">会社名</label>
+                                        </dt>
+                                        <dd class="p-contact__input">
+                                            <input type="text" name="name" id="company" placeholder="きたむらミュージックスクール">
+                                        </dd>
+                                    </dl>
+                                    <dl class="p-contact__item">
+                                        <dt class="p-contact__label">
+                                            <label for="name">お名前</label>
+                                        </dt>
+                                        <dd class="p-contact__input">
+                                            <input type="text" name="name" id="name" placeholder="北村&emsp;翔平">
+                                        </dd>
+                                    </dl>
+                                    <dl class="p-contact__item">
+                                        <dt class="p-contact__label">
+                                            <label for="email">メールアドレス</label>
+                                        </dt>
+                                        <dd class="p-contact__input">
+                                            <input type="email" name="email" id="email" placeholder="info@kitamura.musicschool.jp">
+                                        </dd>
+                                    </dl>
+                                    <dl class="p-contact__item">
+                                        <dt class="p-contact__label">
+                                            <label for="tel">電話番号</label>
+                                        </dt>
+                                        <dd class="p-contact__input">
+                                            <input type="tel" name="tel" id="tel" placeholder="090-1234-5678">
+                                        </dd>
+                                    </dl>
+                                    
+                                </div>
+                                <div class="p-contact__contents-02">
+                                    <dl class="p-contact__check">
+                                        <dt class="p-contact__label p-contact__label--2">
+                                            目&emsp;的&emsp;<br class="pc">(複数選択可)
+                                        </dt>
+                                        <dd class="p-contact__checkbox">
+                                            <div class="p-contact__checkitem">
+                                                <input type="checkbox" name="purpose[]" id="purpose-plan" value="plan">
+                                                <label for="purpose-plan">プランについてのお問い合わせ</label>
+                                            </div>
+                                            <div class="p-contact__checkitem">
+                                                <input type="checkbox" name="purpose[]" id="purpose-hearing" value="hearing">
+                                                <label for="purpose-hearing">ヒアリングのご予約</label>
+                                            </div>
+                                            <div class="p-contact__checkitem">
+                                                <input type="checkbox" name="purpose[]" id="purpose-brochure" value="brochure">
+                                                <label for="purpose-brochure">資料請求</label>
+                                            </div>
+                                            <div class="p-contact__checkitem">
+                                                <input type="checkbox" name="purpose[]" id="purpose-other" value="other">
+                                                <label for="purpose-other">その他</label>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="p-contact__contents-03">
+                                    <dl class="p-contact__item">
+                                        <dt class="p-contact__label p-contact__label--3">
+                                            <label for="content">内&emsp;容</label>
+                                        </dt>
+                                        <dd class="p-contact__textarea">
+                                            <textarea name="content" id="content" placeholder="内容に関する詳細や備考等をご入力ください。"></textarea>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <!-- 送信ボタン -->
+                                <div class="p-contact__button">
+                                    <input type="submit" value="送 信">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                 </section>
+            </div>
+        </main>
+
+        <!-- お問い合わせボタン
+        <div class="l-inquiry">
+            <a href="#" class="c-inquiry">お問い合わせ</a>
+        </div> -->
+
+        <footer>
+            <div class="l-footer p-footer">
+                <div class="l-inner">
+                    <div class="p-footer__contents">
+                        <!-- ナビゲーション設置 -->
+                        <nav class="p-footer__nav">
+                            <ul class="p-footer__nav-list">
+                                <li class="p-footer__nav-item">
+                                    <a href="./index.html" class="p-footer__nav-link">ホーム</a>
+                                </li>
+                                <li class="p-footer__nav-item">
+                                    <a href="./plan.html" class="p-footer__nav-link">料金</a>
+                                </li>
+                                <li class="p-footer__nav-item">
+                                    <a href="./blog_list.html" class="p-footer__nav-link">ブログ</a>
+                                </li>
+                                <li class="p-footer__nav-item">
+                                    <a href="./result_list.html" class="p-footer__nav-link">卒業実績</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="p-footer__logo">
+                            <img src="./img/01_top/logo_footer.svg" alt="logo">
+                        </div>
+                        <!-- コピーライト -->
+                        <div class="p-footer__copyright">
+                            <p>
+                                Copyright &copy; 0000 KITAMURA music school Inc.<br class="sp">All Rights
+                            </p>
+                        </div>
+                    </div>
+                    <!-- SNSアイコン -->
+                    <ul class="p-footer__sns">
+                        <li class="p-footer__sns-item">
+                            <a href="https://x.com/home" class="p-footer__sns-link" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/01_top/icon-twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="p-footer__sns-item">
+                            <a href="https://www.facebook.com/" class="p-footer__sns-link" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/01_top/icon-facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="p-footer__sns-item">
+                            <a href="https://www.youtube.com/" class="p-footer__sns-link" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/01_top/icon-youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="p-footer__sns-item">
+                            <a href="https://www.instagram.com/" class="p-footer__sns-link p-footer__sns-link--instagram" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/01_top/icon-instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- トップへ戻るボタン -->
+        <a href="#" class="c-top c-top--2">
+            <div class="btn__top-icon">
+                <img src="./img/01_top/arrow-top.svg" alt="トップへ戻る">
+            </div>
+        </a>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

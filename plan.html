@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>きたむらミュージックスクール</title>
+    <link rel="icon" href="./img/01_top/logo_pc.svg" type="image/svg+xml">
+    <meta name="description" content="きたむらミュージックスクールの公式サイトです。">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google FontsからNoto Sans JPを読み込む -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="l-header p-header">
+                <div class="p-header__logo">
+                    <a href="./index.html" class="p-header__logo-link">
+                        <span class="p-header__logo-image">
+                            <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
+                        </span>
+                        <h1 class="p-header__logo-name">
+                            <span class="p-header__logo-upper">
+                                きたむら
+                            </span>
+                            <span class="p-header__logo-lower">
+                                ミュージックスクール
+                            </span>
+                        </h1>
+                    </a>
+                </div>
+                <div class="p-header__hamburger sp">
+                    <div class="p-header__hamburger-inner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <nav class="l-header__nav p-header__nav">
+                    <ul>
+                        <li class="p-header__nav-item">
+                            <a href="./plan.html">料金</a>
+                        </li>
+                        <li class="p-header__nav-item">
+                            <a href="./blog_list.html">ブログ</a>
+                        </li>
+                        <li class="p-header__nav-item">
+                            <a href="./result_list.html">卒業実績</a>
+                        </li>
+                        <li class="p-header__nav-item p-header__nav-item--contact">
+                            <a href="./contact.html">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="p-plan">
+            <div class="l-main">
+                <!-- FVセクション -->
+                <div class="c-fv">
+                    <div class="c-fv__image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="./img/02_plan/p-fv-pc.jpg">
+                            <img src="./img/02_plan/p-fv-sp.jpg" alt="音楽で生きるを叶える">
+                        </picture>
+                    </div>
+                    <div class="c-fv__contents">
+                        <h2 class="c-fv__catch">プラン・料金</h2>
+                    </div>
+                    
+                </div>
+                <div class="c-breadcrumb">
+                    <p>
+                        ホーム&emsp;＞&emsp;プラン・料金
+                    </p>
+                </div>
+
+                <!-- 料金セクション -->
+                <section class="p-plan-price">
+                    <div class="c-section-title">
+                        <h2>料金体系</h2>
+                    </div>
+                    <div class="p-plan-price__contents">
+                        <div class="p-plan-price__fig">
+                            <div class="p-plan-price__fee">
+                                <p>
+                                    入会金 39,000円
+                                </p>
+                            </div>
+                            <div class="p-plan-price__plus">
+                                <img src="./img/02_plan/p-plus-icon.svg" alt="プラス記号">
+                            </div>
+                            <div class="p-plan-price__fee">
+                                <p>
+                                    月額料金
+                                </p>
+                            </div>
+                        </div>
+                        <div class="p-plan-price__desc">
+                            <p>
+                                きたむらミュージックスクールでは、個人に合わせたサポートを行う完全オーダーメイドのプランを用意しており、サポート内容により月額料金が異なります。担当者があなたに最適なプランを提案いたしますので、お気軽にお問い合わせください。※すべての料金は税込価格となります。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- プラン内容・月額料金セクション -->
+                <section class="p-plan-monthly">
+                    <div class="l-inner">
+                        <div class="c-section-title">
+                            <h2>プラン内容・月額料金</h2>
+                        </div>
+                        <div class="p-plan-monthly__contents">
+                            <!-- 横スクロール用の枠 -->
+                            <div
+                                class="p-plan-monthly__scroll"
+                                id="plan-monthly-scroll"
+                                role="region"
+                                aria-label="料金プランの比較表"
+                                tabindex="0"
+                            >
+                                <!-- 8行×4列のGrid -->
+                                <div
+                                    class="p-plan-monthly__table"
+                                    role="table"
+                                    aria-label="プラン内容・月額料金"
+                                    aria-rowcount="8"
+                                    aria-colcount="4"
+                                >
+                                    <!-- 1行目 -->
+                                    <div class="p-plan-monthly__row" role="row" aria-rowindex="1">
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--fixed p-plan-monthly__cell--empty"
+                                            role="cell"
+                                            aria-rowindex="1"
+                                            aria-colindex="1"
+                                        ></div>
+
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--empty"
+                                            role="cell"
+                                            aria-rowindex="1"
+                                            aria-colindex="2"
+                                        ></div>
+
+                                        <!-- 3列目の1〜2行目を縦結合 -->
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--plan p-plan-monthly__cell--recommended"
+                                            role="columnheader"
+                                            aria-rowindex="1"
+                                            aria-colindex="3"
+                                            aria-rowspan="2"
+                                        >
+                                            <span class="p-plan-monthly__recommend">おすすめ</span>
+                                            <span>スタンダードプラン</span>
+                                        </div>
+
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--empty"
+                                            role="cell"
+                                            aria-rowindex="1"
+                                            aria-colindex="4"
+                                        ></div>
+                                    </div>
+
+                                    <!-- 2行目 -->
+                                    <div class="p-plan-monthly__row" role="row" aria-rowindex="2">
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--fixed p-plan-monthly__cell--empty"
+                                            role="cell"
+                                            aria-rowindex="2"
+                                            aria-colindex="1"
+                                        ></div>
+
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--plan"
+                                            role="columnheader"
+                                            aria-rowindex="2"
+                                            aria-colindex="2"
+                                        >
+                                            ベーシック<br class="sp">プラン
+                                        </div>
+
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--plan"
+                                            role="columnheader"
+                                            aria-rowindex="2"
+                                            aria-colindex="4"
+                                        >
+                                            プレミアムプラン
+                                        </div>
+                                    </div>
+
+                                    <!-- 3行目 -->
+                                    <div class="p-plan-monthly__row" role="row" aria-rowindex="3">
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--fixed p-plan-monthly__cell--label"
+                                            role="rowheader"
+                                            aria-rowindex="3"
+                                            aria-colindex="1"
+                                        >
+                                            月額料金
+                                        </div>
+
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--price"
+                                            role="cell"
+                                            aria-rowindex="3"
+                                            aria-colindex="2"
+                                        >
+                                            39,000円
+                                        </div>
+
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--price"
+                                            role="cell"
+                                            aria-rowindex="3"
+                                            aria-colindex="3"
+                                        >
+                                            59,000円
+                                        </div>
+
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--price"
+                                            role="cell"
+                                            aria-rowindex="3"
+                                            aria-colindex="4"
+                                        >
+                                            128,000円
+                                        </div>
+                                    </div>
+
+                                    <!-- 4行目 -->
+                                    <div class="p-plan-monthly__row" role="row" aria-rowindex="4">
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--fixed p-plan-monthly__cell--label"
+                                            role="rowheader"
+                                            aria-rowindex="4"
+                                            aria-colindex="1"
+                                        >
+                                            マンツーマン授業
+                                        </div>
+
+                                        <div
+                                            class="p-plan-monthly__cell"
+                                            role="cell"
+                                            aria-rowindex="4"
+                                            aria-colindex="2"
+                                        >
+                                            <div class="p-plan-monthly__service">
+                                                <span class="c-plan-mark" role="img" aria-label="利用可能"></span>
+                                                <span class="p-plan-monthly__detail">週1回</span>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="p-plan-monthly__cell"
+                                            role="cell"
+                                            aria-rowindex="4"
+                                            aria-colindex="3"
+                                        >
+                                            <div class="p-plan-monthly__service">
+                                                <span class="c-plan-mark c-plan-mark--red" role="img" aria-label="利用可能"></span>
+                                                <span class="p-plan-monthly__detail">週2回</span>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="p-plan-monthly__cell"
+                                            role="cell"
+                                            aria-rowindex="4"
+                                            aria-colindex="4"
+                                        >
+                                            <div class="p-plan-monthly__service">
+                                                <span class="c-plan-mark" role="img" aria-label="利用可能"></span>
+                                                <span class="p-plan-monthly__detail">無制限</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 5行目 -->
+                                    <div class="p-plan-monthly__row" role="row" aria-rowindex="5">
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--fixed p-plan-monthly__cell--label"
+                                            role="rowheader"
+                                            aria-rowindex="5"
+                                            aria-colindex="1"
+                                        >
+                                            ビジネス基本講座
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="5" aria-colindex="2">
+                                            <span class="c-plan-mark" role="img" aria-label="利用可能"></span>
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="5" aria-colindex="3">
+                                            <span class="c-plan-mark c-plan-mark--red" role="img" aria-label="利用可能"></span>
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="5" aria-colindex="4">
+                                            <span class="c-plan-mark" role="img" aria-label="利用可能"></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- 6行目 -->
+                                    <div class="p-plan-monthly__row" role="row" aria-rowindex="6">
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--fixed p-plan-monthly__cell--label"
+                                            role="rowheader"
+                                            aria-rowindex="6"
+                                            aria-colindex="1"
+                                        >
+                                            練習ROOM利用
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="6" aria-colindex="2">
+                                            <div class="p-plan-monthly__service">
+                                                <span class="c-plan-mark" role="img" aria-label="利用可能"></span>
+                                                <span class="p-plan-monthly__detail">月10時間</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="6" aria-colindex="3">
+                                            <div class="p-plan-monthly__service">
+                                                <span class="c-plan-mark c-plan-mark--red" role="img" aria-label="利用可能"></span>
+                                                <span class="p-plan-monthly__detail">月20時間</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="6" aria-colindex="4">
+                                            <div class="p-plan-monthly__service">
+                                                <span class="c-plan-mark" role="img" aria-label="利用可能"></span>
+                                                <span class="p-plan-monthly__detail">無制限</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 7行目 -->
+                                    <div class="p-plan-monthly__row" role="row" aria-rowindex="7">
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--fixed p-plan-monthly__cell--label"
+                                            role="rowheader"
+                                            aria-rowindex="7"
+                                            aria-colindex="1"
+                                        >
+                                            ビジネスコンサル
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="7" aria-colindex="2">
+                                            <span class="c-plan-mark c-plan-mark--dash" role="img" aria-label="対象外"></span>
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="7" aria-colindex="3">
+                                            <div class="p-plan-monthly__service">
+                                                <span class="c-plan-mark c-plan-mark--red" role="img" aria-label="利用可能"></span>
+                                                <span class="p-plan-monthly__detail">月2回</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="7" aria-colindex="4">
+                                            <div class="p-plan-monthly__service">
+                                                <span class="c-plan-mark" role="img" aria-label="利用可能"></span>
+                                                <span class="p-plan-monthly__detail">月3回</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 8行目 -->
+                                    <div class="p-plan-monthly__row" role="row" aria-rowindex="8">
+                                        <div
+                                            class="p-plan-monthly__cell p-plan-monthly__cell--fixed p-plan-monthly__cell--label"
+                                            role="rowheader"
+                                            aria-rowindex="8"
+                                            aria-colindex="1"
+                                        >
+                                            コミュニティ<br class="sp">参加資格
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="8" aria-colindex="2">
+                                            <span class="c-plan-mark c-plan-mark--dash" role="img" aria-label="対象外"></span>
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="8" aria-colindex="3">
+                                            <span class="c-plan-mark c-plan-mark--dash" role="img" aria-label="対象外"></span>
+                                        </div>
+
+                                        <div class="p-plan-monthly__cell" role="cell" aria-rowindex="8" aria-colindex="4">
+                                            <span class="c-plan-mark" role="img" aria-label="利用可能"></span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- スクロールバーのスライダー -->
+                            <input
+                                class="p-plan-monthly__scroll-control"
+                                type="range"
+                                min="0"
+                                max="100"
+                                step="any"
+                                value="0"
+                                aria-label="料金表の横スクロール"
+                                aria-controls="plan-monthly-scroll"
+                            >
+                        </div>
+                        <div class="p-plan-monthly__desc">
+                            <p>
+                                ※各サービスは１回ごとのオプション追加が可能です。詳しくは事務局までお問い合わせください。
+                            </p>
+                        </div>
+                    </div>
+                    
+                    
+                </section>
+            </div>
+        </main>
+
+        <!-- お問い合わせ・トップへ戻るボタン -->
+        <div class="l-inquiry">
+            <div class="p-footer-actions">
+                <div class="p-footer-actions__inquiry">
+                    <a href="./contact.html" class="c-inquiry">お問い合わせ</a>
+                </div>
+                <a href="#" class="c-top p-footer-actions__top">
+                    <div class="btn__top-icon">
+                        <img src="./img/01_top/arrow-top.svg" alt="トップへ戻る">
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <footer>
+            <div class="l-footer p-footer">
+                <div class="l-inner">
+                    <div class="p-footer__contents">
+                        <!-- ナビゲーション設置 -->
+                        <nav class="p-footer__nav">
+                            <ul class="p-footer__nav-list">
+                                <li class="p-footer__nav-item">
+                                    <a href="./index.html" class="p-footer__nav-link">ホーム</a>
+                                </li>
+                                <li class="p-footer__nav-item">
+                                    <a href="./plan.html" class="p-footer__nav-link">料金</a>
+                                </li>
+                                <li class="p-footer__nav-item">
+                                    <a href="./blog_list.html" class="p-footer__nav-link">ブログ</a>
+                                </li>
+                                <li class="p-footer__nav-item">
+                                    <a href="./result_list.html" class="p-footer__nav-link">卒業実績</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="p-footer__logo">
+                            <img src="./img/01_top/logo_footer.svg" alt="logo">
+                        </div>
+                        <!-- コピーライト -->
+                        <div class="p-footer__copyright">
+                            <p>
+                                Copyright &copy; 0000 KITAMURA music school Inc.<br class="sp">All Rights
+                            </p>
+                        </div>
+                    </div>
+                    <!-- SNSアイコン -->
+                    <ul class="p-footer__sns">
+                        <li class="p-footer__sns-item">
+                            <a href="https://x.com/home" class="p-footer__sns-link" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/01_top/icon-twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="p-footer__sns-item">
+                            <a href="https://www.facebook.com/" class="p-footer__sns-link" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/01_top/icon-facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="p-footer__sns-item">
+                            <a href="https://www.youtube.com/" class="p-footer__sns-link" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/01_top/icon-youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                        <li class="p-footer__sns-item">
+                            <a href="https://www.instagram.com/" class="p-footer__sns-link p-footer__sns-link--instagram" target="_blank" rel="noopener noreferrer">
+                                <img src="./img/01_top/icon-instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

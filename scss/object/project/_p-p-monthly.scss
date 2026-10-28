@@ -1,0 +1,273 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.p-plan-monthly {
+    padding-top: 3.6rem;
+    padding-bottom: 12.4rem;
+
+    @include pc {
+        padding-top: 5.7rem;
+        padding-bottom: 16.3rem;
+    }
+
+    &__contents {
+        margin-top: 0.7rem;
+
+        @include pc {
+            margin-top: 4.8rem;
+        }
+    }
+
+    // 横スクロール用の枠
+    &__scroll {
+        width: 100%;
+        min-width: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &:focus-visible {
+            outline: 2px solid #cb0000;
+            outline-offset: 4px;
+        }
+    }
+
+    &__scroll-control {
+        // margin-top: 1.7rem 0 0;
+
+        -webkit-appearance: none;
+        appearance: none;
+        display: block;
+        width: 100%;
+        height: 25px;
+        margin: 1.7rem 0 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        background: transparent;
+        cursor: pointer;
+
+        // Chrome・Safari・Edge：バー
+        &::-webkit-slider-runnable-track {
+            height: 25px;
+            border: 0;
+            border-radius: 0;
+            background-color: rgba(#505050, 0.149);
+        }
+
+        // Chrome・Safari・Edge：つまみ
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100px;
+            height: 23px;
+            margin-top: 1px;
+            border: 0;
+            border-radius: 0;
+            background-color: rgba(#505050, 0.251);
+            box-shadow: none;
+        }
+
+        // Firefox：バー
+        &::-moz-range-track {
+            height: 25px;
+            border: 0;
+            border-radius: 0;
+            background-color: rgba(#505050, 0.149);
+        }
+
+        // Firefox：つまみ（上下は中央に配置される）
+        &::-moz-range-thumb {
+            width: 100px;
+            height: 23px;
+            border: 0;
+            border-radius: 0;
+            background-color: rgba(#505050, 0.251);
+            box-shadow: none;
+        }
+
+        &:focus-visible {
+            outline: 2px solid #cb0000;
+            outline-offset: 4px;
+        }
+
+        @include pc {
+            display: none;
+        }
+    }
+
+    // 8行×4列
+    &__table {
+    display: grid;
+    width: 67rem;
+    grid-template-columns: repeat(4, 16.75rem);
+    grid-template-rows: 3rem 6.6rem repeat(6, 8.5rem);
+    isolation: isolate;
+
+    @include pc {
+        width: 88rem;
+        grid-template-columns: repeat(4, 22rem);
+        grid-template-rows: 3rem 5rem repeat(6, 8.5rem);
+    }
+}
+
+    // 行の構造を保ちながら、セルを既存のGridで配置する
+    &__row {
+        display: contents;
+    }
+
+    &__cell {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 0;
+        // padding: 1.2rem 0.8rem;
+        border-right: 0.5px solid #000;
+
+        &[aria-colindex="4"] {
+            border-right: none;
+        }
+        background-color: #fff;
+        font-size: 1.6rem;
+        line-height: calc(25 / 16);
+        text-align: center;
+        overflow-wrap: anywhere;
+
+        @include pc {
+            // padding: 1.5rem 1rem;
+            font-size: 1.7rem;
+            line-height: calc(25 / 17);
+        }
+
+        // HTMLの行番号に合わせて配置
+        @for $row from 1 through 8 {
+            &[aria-rowindex="#{$row}"] {
+                grid-row: #{$row};
+            }
+        }
+
+        // HTMLの列番号に合わせて配置
+        @for $column from 1 through 4 {
+            &[aria-colindex="#{$column}"] {
+                grid-column: #{$column};
+            }
+        }
+
+        // 本文の交互背景
+        &[aria-rowindex="4"],
+        &[aria-rowindex="6"],
+        &[aria-rowindex="8"] {
+            // background-color: rgba(#505050, 0.149);
+            background-color: #e5e5e5;
+        }
+
+        // 本文上端の罫線
+        &[aria-rowindex="3"] {
+            border-top: 0.5px solid #000;
+        }
+
+        // SPでは左列を固定
+        &--fixed {
+            position: sticky;
+            left: 0;
+            z-index: 2;
+
+            @include pc {
+                position: static;
+                z-index: auto;
+            }
+        }
+
+        // 上部の空セル
+        &--empty {
+            padding: 0;
+            border: 0;
+            background-color: #fff;
+        }
+
+        &--label {
+            justify-content: flex-start;
+            text-align: left;
+            padding-left: 1rem;
+            font-weight: 500;
+
+            &[aria-rowindex="3"][aria-colindex="1"] {
+                font-weight: 700;
+            }
+
+            @include pc {
+                padding-left: 2rem;
+            }
+        }
+
+        &--plan {
+            // padding: 1rem 0.8rem;
+            border-color: #fff;
+            background-color: #000;
+            color: #fff;
+            font-size: 2rem;
+            line-height: calc(25 / 20);
+            font-weight: 700;
+
+            @include pc {
+                // padding: 1.5rem 1rem;
+                line-height: calc(33 / 20);
+            }
+        }
+
+        // スタンダードプランは1〜2行目を縦結合
+        &--recommended[aria-rowspan="2"] {
+            grid-row: 1 / 3;
+            flex-direction: column;
+            // gap: 0.4rem;
+            background-color: $color-main;
+        }
+
+        &--price {
+            font-size: 2.2rem;
+            line-height: calc(33 / 22);
+            font-weight: 700;
+
+            &[aria-rowindex="3"][aria-colindex="3"] {
+                color: $color-main;
+            }
+
+        }
+    }
+
+    &__recommend {
+        font-size: 1.7rem;
+        line-height: calc(33 / 17);
+
+    }
+
+    // ●と説明を縦に並べ、下端の余白を調整
+    &__service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        align-self: stretch;
+        gap: 0.8rem;
+        width: 100%;
+        padding-bottom: 1.5rem;
+    }
+
+    &__detail {
+        font-size: 1.7rem;
+        line-height: calc(25 / 17);
+    }
+}
+
+.p-plan-monthly__desc {
+    margin-top: 1.7rem;
+    
+    @include pc {
+        font-size: 1.7rem;
+        line-height: calc(25 / 17);
+        margin-top: 2.8rem;
+    }
+}

@@ -16,6 +16,9 @@ Thumbs.db
 # マークダウンファイル除外
 *.md
 
+# Googleドキュメント
+*.gsheet
+
 # アプリケーションファイル除外
 *.app
 *.exe
@@ -31,6 +34,9 @@ Thumbs.db
 
 # node_modulesフォルダを除外
 node_modules
+
+#ピクセルパーフェクトフォルダを除外
+pixelperfect
 
 # ビルドファイル除外
 dist
