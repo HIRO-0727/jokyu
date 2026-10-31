@@ -1,0 +1,66 @@
+@use '../../foundation/mixin' as *;
+
+.p-blog-breadcrumb {
+    --breadcrumb-gap: 0;
+
+    .c-breadcrumb__list {
+        display: grid;
+        grid-template-columns: repeat(3, max-content);
+        gap: 0;
+        height: auto;
+
+        @include pc {
+            display: flex;
+            height: 100%;
+        }
+    }
+
+    .c-breadcrumb__item {
+        display: block;
+        height: auto;
+
+        @include pc {
+            display: flex;
+            height: 100%;
+        }
+    }
+
+    .c-breadcrumb__link {
+        display: inline;
+        height: auto;
+        padding: 0;
+
+        @include pc {
+            display: flex;
+            height: 100%;
+            padding-top: 0.3rem;
+        }
+    }
+
+    .c-breadcrumb__separator {
+        margin-inline: var(--breadcrumb-separator-before) var(--breadcrumb-separator-after);
+    }
+}
+
+.p-blog-breadcrumb__home {
+    --breadcrumb-separator-before: 1.9rem;
+    --breadcrumb-separator-after: 1.9rem;
+}
+
+.p-blog-breadcrumb__blog {
+    --breadcrumb-separator-before: 2rem;
+    --breadcrumb-separator-after: 2.1rem;
+}
+
+.p-blog-breadcrumb__category {
+    --breadcrumb-separator-before: 2rem;
+    --breadcrumb-separator-after: 0;
+
+    @include pc {
+        --breadcrumb-separator-after: 2.2rem;
+    }
+}
+
+.p-blog-breadcrumb__article {
+    grid-column: 1 / -1;
+}

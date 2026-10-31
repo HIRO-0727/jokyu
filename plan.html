@@ -20,21 +20,21 @@
     <div id="container">
         <header>
             <div class="l-header p-header">
-                <div class="p-header__logo">
+                <h1 class="p-header__logo">
                     <a href="./index.html" class="p-header__logo-link">
                         <span class="p-header__logo-image">
                             <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
                         </span>
-                        <h1 class="p-header__logo-name">
+                        <span class="p-header__logo-name">
                             <span class="p-header__logo-upper">
                                 きたむら
                             </span>
                             <span class="p-header__logo-lower">
                                 ミュージックスクール
                             </span>
-                        </h1>
+                        </span>
                     </a>
-                </div>
+                </h1>
                 <div class="p-header__hamburger sp">
                     <div class="p-header__hamburger-inner">
                         <span></span>
@@ -71,15 +71,21 @@
                         </picture>
                     </div>
                     <div class="c-fv__contents">
-                        <h2 class="c-fv__catch">プラン・料金</h2>
+                        <h1 class="c-fv__catch">プラン・料金</h1>
                     </div>
                     
                 </div>
-                <div class="c-breadcrumb">
-                    <p>
-                        ホーム&emsp;＞&emsp;プラン・料金
-                    </p>
-                </div>
+                <nav class="c-breadcrumb c-breadcrumb--linked p-plan-breadcrumb" aria-label="パンくずリスト">
+                    <ol class="c-breadcrumb__list">
+                        <li class="c-breadcrumb__item">
+                            <a class="c-breadcrumb__link" href="./index.html">ホーム</a>
+                        </li>
+                        <li class="c-breadcrumb__item">
+                            <span class="c-breadcrumb__separator" aria-hidden="true">＞</span>
+                            <span class="c-breadcrumb__current" aria-current="page">プラン・料金</span>
+                        </li>
+                    </ol>
+                </nav>
 
                 <!-- 料金セクション -->
                 <section class="p-plan-price">
@@ -458,7 +464,9 @@
                             </ul>
                         </nav>
                         <div class="p-footer__logo">
-                            <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            <a href="./index.html#">
+                                <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            </a>
                         </div>
                         <!-- コピーライト -->
                         <div class="p-footer__copyright">

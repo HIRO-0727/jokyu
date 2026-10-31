@@ -20,21 +20,21 @@
     <div id="container">
         <header>
             <div class="l-header p-header">
-                <div class="p-header__logo">
+                <h1 class="p-header__logo">
                     <a href="./index.html" class="p-header__logo-link">
                         <span class="p-header__logo-image">
                             <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
                         </span>
-                        <h1 class="p-header__logo-name">
+                        <span class="p-header__logo-name">
                             <span class="p-header__logo-upper">
                                 きたむら
                             </span>
                             <span class="p-header__logo-lower">
                                 ミュージックスクール
                             </span>
-                        </h1>
+                        </span>
                     </a>
-                </div>
+                </h1>
                 <div class="p-header__hamburger sp">
                     <div class="p-header__hamburger-inner">
                         <span></span>
@@ -63,11 +63,17 @@
         <main class="p-plan">
             <div class="l-main">
                 
-                <div class="c-breadcrumb">
-                    <p>
-                        ホーム&emsp;＞&emsp;&nbsp;検索
-                    </p>
-                </div>
+                <nav class="c-breadcrumb c-breadcrumb--linked" aria-label="パンくずリスト">
+                    <ol class="c-breadcrumb__list">
+                        <li class="c-breadcrumb__item">
+                            <a class="c-breadcrumb__link" href="./index.html">ホーム</a>
+                        </li>
+                        <li class="c-breadcrumb__item">
+                            <span class="c-breadcrumb__separator" aria-hidden="true">＞</span>
+                            <span class="c-breadcrumb__current" aria-current="page">検索</span>
+                        </li>
+                    </ol>
+                </nav>
 
                 <!-- 検索結果一覧セクション -->
                 <section class="p-search">
@@ -375,15 +381,15 @@
                             
                         </div>
                         <nav class="p-search__pagination c-pagination" aria-label="ページ送り">
-                            <div class="c-pagination__number c-pagination__number--current">
+                            <div class="c-pagination__number c-pagination__number--current" aria-current="page">
                                 <p>1</p>
                             </div>
-                            <div class="c-pagination__number">
+                            <a href="./search.html" class="c-pagination__number">
                                 <p>2</p>
-                            </div>
-                            <div class="c-pagination__number">
+                            </a>
+                            <a href="./search.html" class="c-pagination__number">
                                 <p>3</p>
-                            </div>
+                            </a>
                             
                         </nav>
                         
@@ -432,7 +438,9 @@
                             </ul>
                         </nav>
                         <div class="p-footer__logo">
-                            <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            <a href="./index.html#">
+                                <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            </a>
                         </div>
                         <!-- コピーライト -->
                         <div class="p-footer__copyright">

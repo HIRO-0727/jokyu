@@ -32,6 +32,17 @@
     margin-top: 0;
 }
 
+.swiper-slide {
+    @include pc {
+        transition: opacity 0.4s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+    
+}
+
 .p-top-voice .swiper-slide__image {
     > picture {
         display: block;
