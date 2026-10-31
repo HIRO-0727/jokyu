@@ -69,6 +69,7 @@
 .c-breadcrumb--ultra-tall {
     height: 7.7rem;
     line-height: calc(20 / 16);
+    padding-top: 0.3rem;
 
     @include pc {
         height: 5rem;

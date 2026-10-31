@@ -43,21 +43,21 @@
 }
 
 .p-blog-breadcrumb__home {
-    --breadcrumb-separator-before: 1.9rem;
+    --breadcrumb-separator-before: 1.7rem;
     --breadcrumb-separator-after: 1.9rem;
 }
 
 .p-blog-breadcrumb__blog {
-    --breadcrumb-separator-before: 2rem;
+    --breadcrumb-separator-before: 1.8rem;
     --breadcrumb-separator-after: 2.1rem;
 }
 
 .p-blog-breadcrumb__category {
-    --breadcrumb-separator-before: 2rem;
+    --breadcrumb-separator-before: 1.8rem;
     --breadcrumb-separator-after: 0;
 
     @include pc {
-        --breadcrumb-separator-after: 2.2rem;
+        --breadcrumb-separator-after: 2rem;
     }
 }
 

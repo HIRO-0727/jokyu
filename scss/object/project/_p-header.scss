@@ -12,7 +12,7 @@
 
     @include pc {
         height: 8rem;
-        padding-inline: 10rem;
+        padding-inline: clamp(30px, calc((100% - 880px) / 2), 100px);
     }
 }
 
