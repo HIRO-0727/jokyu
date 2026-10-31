@@ -12,7 +12,7 @@
 
     @include pc {
         height: 8rem;
-        padding-inline: 10rem;
+        padding-inline: clamp(30px, calc((100% - 880px) / 2), 100px);
     }
 }
 
@@ -196,6 +196,7 @@
                 width: 15rem;
                 height: 4.5rem;
                 background: $color-main;
+                border: 1px solid $color-main;
                 a {
                     height: 100%;
                     font-size: 1.5rem;
@@ -203,10 +204,11 @@
                     display: flex;
                     align-items: center;
 
-                    transition: opacity 0.4s;
+                    transition: color 0.4s, background-color 0.4s;
 
                     &:hover {
-                        opacity: 0.7;
+                        color: $color-main;
+                        background-color: #fff;
                     }
                 }
             }

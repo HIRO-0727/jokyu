@@ -20,21 +20,21 @@
     <div id="container">
         <header>
             <div class="l-header p-header">
-                <div class="p-header__logo">
+                <h1 class="p-header__logo">
                     <a href="./index.html" class="p-header__logo-link">
                         <span class="p-header__logo-image">
                             <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
                         </span>
-                        <h1 class="p-header__logo-name">
+                        <span class="p-header__logo-name">
                             <span class="p-header__logo-upper">
                                 きたむら
                             </span>
                             <span class="p-header__logo-lower">
                                 ミュージックスクール
                             </span>
-                        </h1>
+                        </span>
                     </a>
-                </div>
+                </h1>
                 <div class="p-header__hamburger sp">
                     <div class="p-header__hamburger-inner">
                         <span></span>
@@ -63,11 +63,14 @@
         <main class="p-plan">
             <div class="l-main">
                 <!-- パンくずリスト -->
-                <div class="c-breadcrumb c-breadcrumb--tall">
-                    <p>
-                        ホーム&emsp;＞&emsp;&nbsp;ブログ&emsp;＞&emsp;&nbsp;ギター&emsp;&nbsp;＞<br class="sp"><span class="pc">&emsp;</span>アルペジオが劇的に向上する３つの習慣
-                    </p>
-                </div>
+                <nav class="c-breadcrumb c-breadcrumb--linked c-breadcrumb--tall p-blog-breadcrumb" aria-label="パンくずリスト">
+                    <ol class="c-breadcrumb__list">
+                        <li class="c-breadcrumb__item p-blog-breadcrumb__home"><a class="c-breadcrumb__link" href="./index.html">ホーム</a><span class="c-breadcrumb__separator" aria-hidden="true">＞</span></li>
+                        <li class="c-breadcrumb__item p-blog-breadcrumb__blog"><a class="c-breadcrumb__link" href="./blog_list.html">ブログ</a><span class="c-breadcrumb__separator" aria-hidden="true">＞</span></li>
+                        <li class="c-breadcrumb__item p-blog-breadcrumb__category"><a class="c-breadcrumb__link" href="./blog_list.html">ギター</a><span class="c-breadcrumb__separator" aria-hidden="true">＞</span></li>
+                        <li class="c-breadcrumb__item p-blog-breadcrumb__article"><span class="c-breadcrumb__current" aria-current="page">アルペジオが劇的に向上する３つの習慣</span></li>
+                    </ol>
+                </nav>
                 <div class="l-inner">
                     <div class="p-blog-detail">
                         <!-- ブログ本文 -->
@@ -97,31 +100,31 @@
                                         <div class="p-blog-detail__fb">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/04_b_detail/icon-fb-pc.svg">
-                                                <img src="./img/04_b_detail/icon-fb-sp.svg" alt="アルペジオ上達法">
+                                                <img src="./img/04_b_detail/icon-fb-sp.svg" alt="Facebook">
                                             </picture>
                                         </div>
                                         <div class="p-blog-detail__twitter">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/04_b_detail/icon-twitter-pc.svg">
-                                                <img src="./img/04_b_detail/icon-twitter-sp.svg" alt="アルペジオ上達法">
+                                                <img src="./img/04_b_detail/icon-twitter-sp.svg" alt="twitter">
                                             </picture>
                                         </div>
                                         <div class="p-blog-detail__hatena">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/04_b_detail/icon-hatena-pc.svg">
-                                                <img src="./img/04_b_detail/icon-hatena-sp.svg" alt="アルペジオ上達法">
+                                                <img src="./img/04_b_detail/icon-hatena-sp.svg" alt="hatena">
                                             </picture>
                                         </div>
                                         <div class="p-blog-detail__line">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/04_b_detail/icon-line-pc.svg">
-                                                <img src="./img/04_b_detail/icon-line-sp.svg" alt="アルペジオ上達法">
+                                                <img src="./img/04_b_detail/icon-line-sp.svg" alt="LINE">
                                             </picture>
                                         </div>
                                         <div class="p-blog-detail__line">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/04_b_detail/icon-pocket-pc.svg">
-                                                <img src="./img/04_b_detail/icon-pocket-sp.svg" alt="アルペジオ上達法">
+                                                <img src="./img/04_b_detail/icon-pocket-sp.svg" alt="pocket">
                                             </picture>
                                         </div>
                                         
@@ -184,9 +187,9 @@
                             <section class="p-blog-detail__reference">
                                 <div class="p-post-navigation">
                                     <div class="p-post-navigation__item">
-                                        <div class="p-post-navigation__label p-post-navigation__label--prev">
+                                        <a href="./blog_list.html" class="p-post-navigation__label p-post-navigation__label--prev">
                                             <p>◀︎ 前の記事</p>
-                                        </div>
+                                        </a>
                                         <div class="p-post-navigation__contents">
                                             <div class="p-post-navigation__image">
                                                 <img src="./img/04_b_detail/bd-kiji-pc.jpg" alt="記事画像">
@@ -200,9 +203,9 @@
                                         
                                     </div>
                                     <div class="p-post-navigation__item">
-                                        <div class="p-post-navigation__label p-post-navigation__label--next">
+                                        <a href="./blog_list.html" class="p-post-navigation__label p-post-navigation__label--next">
                                             <p>次の記事 ▶︎</p>
-                                        </div>
+                                        </a>
                                         <div class="p-post-navigation__contents">
                                             <div class="p-post-navigation__image">
                                                 <img src="./img/04_b_detail/bd-kiji-pc.jpg" alt="記事画像">
@@ -302,9 +305,9 @@
                                     <p>無料メールマガジン</p>
                                 </div>
                                 <div class="p-blog-sidebar__mailmag-contents">
-                                    <p class="p-blog-sidebar__mailmag-adbanner">
+                                    <a href="#" class="p-blog-sidebar__mailmag-adbanner">
                                         バナー広告
-                                    </p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="p-blog-sidebar__search">
@@ -312,14 +315,14 @@
                                     <p>ブログ内を検索</p>
                                 </div>
                                 <div class="p-blog-sidebar__search-contents">
-                                    <div class="p-blog-sidebar__search-item">
-                                        <div class="p-blog-sidebar__search-window"></div>
-                                        <div class="p-blog-sidebar__search-button">
-                                            <div class="p-blog-sidebar__search-icon">
+                                    <form action="./search.html" class="p-blog-sidebar__search-item">
+                                        <input type="search" name="q" class="p-blog-sidebar__search-window" aria-label="ブログ内の検索キーワード">
+                                        <button type="submit" class="p-blog-sidebar__search-button">
+                                            <span class="p-blog-sidebar__search-icon">
                                                 <img src="./img/04_b_detail/icon-search.svg" alt="虫眼鏡">
-                                            </div>
-                                        </div>
-                                    </div>
+                                            </span>
+                                        </button>
+                                    </form>
                                     
                                 </div>
                             </div>
@@ -328,24 +331,24 @@
                                     <p>おすすめの記事</p>
                                 </div>
                                 <div class="p-blog-sidebar__recommend-contents">
-                                    <div class="p-blog-sidebar__recommend-item">
+                                    <a href="./blog_list.html" class="p-blog-sidebar__recommend-item">
                                         <div class="p-blog-sidebar__recommend-image"></div>
                                         <div class="p-blog-sidebar__recommend-desc">
                                             <p>タイトルが入ります。タイトル</p>
                                         </div>
-                                    </div>
-                                    <div class="p-blog-sidebar__recommend-item">
+                                    </a>
+                                    <a href="./blog_list.html" class="p-blog-sidebar__recommend-item">
                                         <div class="p-blog-sidebar__recommend-image"></div>
                                         <div class="p-blog-sidebar__recommend-desc">
                                             <p>タイトルが入ります。タイトル</p>
                                         </div>
-                                    </div>
-                                    <div class="p-blog-sidebar__recommend-item">
+                                    </a>
+                                    <a href="./blog_list.html" class="p-blog-sidebar__recommend-item">
                                         <div class="p-blog-sidebar__recommend-image"></div>
                                         <div class="p-blog-sidebar__recommend-desc">
                                             <p>タイトルが入ります。タイトル</p>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <div class="p-blog-sidebar__category">
@@ -354,19 +357,29 @@
                                 </div>
                                 <div class="p-blog-sidebar__category-contents">
                                     <div class="p-blog-sidebar__category-item">
-                                        <p>カテゴリー</p>
+                                        <a href="./blog_list.html" class="p-blog-sidebar__category-link">
+                                            <p>カテゴリー</p>
+                                        </a>
                                     </div>
                                     <div class="p-blog-sidebar__category-item">
-                                        <p>カテゴリー</p>
+                                        <a href="./blog_list.html" class="p-blog-sidebar__category-link">
+                                            <p>カテゴリー</p>
+                                        </a>
                                     </div>
                                     <div class="p-blog-sidebar__category-item">
-                                        <p>カテゴリー</p>
+                                        <a href="./blog_list.html" class="p-blog-sidebar__category-link">
+                                            <p>カテゴリー</p>
+                                        </a>
                                     </div>
                                     <div class="p-blog-sidebar__category-item">
-                                        <p>カテゴリー</p>
+                                        <a href="./blog_list.html" class="p-blog-sidebar__category-link">
+                                            <p>カテゴリー</p>
+                                        </a>
                                     </div>
                                     <div class="p-blog-sidebar__category-item">
-                                        <p>カテゴリー</p>
+                                        <a href="./blog_list.html" class="p-blog-sidebar__category-link">
+                                            <p>カテゴリー</p>
+                                        </a>
                                     </div>
                                 </div>
                                 
@@ -414,7 +427,9 @@
                             </ul>
                         </nav>
                         <div class="p-footer__logo">
-                            <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            <a href="./index.html#">
+                                <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            </a>
                         </div>
                         <!-- コピーライト -->
                         <div class="p-footer__copyright">

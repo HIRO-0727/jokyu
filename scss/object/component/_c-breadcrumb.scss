@@ -19,6 +19,44 @@
     }
 }
 
+.c-breadcrumb--linked {
+    @include pc {
+        padding-top: 0;
+    }
+}
+
+.c-breadcrumb__list {
+    display: flex;
+    column-gap: var(--breadcrumb-gap, 1.9rem);
+    height: 100%;
+}
+
+.c-breadcrumb__item {
+    display: flex;
+    align-items: center;
+    column-gap: var(--breadcrumb-gap, 1.9rem);
+    height: 100%;
+}
+
+.c-breadcrumb__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    &:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: -2px;
+    }
+}
+
+.c-breadcrumb__link,
+.c-breadcrumb__separator,
+.c-breadcrumb__current {
+    @include pc {
+        padding-top: 0.3rem;
+    }
+}
+
 .c-breadcrumb--tall {
     height: 5.9rem;
     line-height: calc(24 / 16);
@@ -31,6 +69,7 @@
 .c-breadcrumb--ultra-tall {
     height: 7.7rem;
     line-height: calc(20 / 16);
+    padding-top: 0.3rem;
 
     @include pc {
         height: 5rem;

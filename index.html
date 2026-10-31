@@ -20,21 +20,21 @@
     <div id="container">
         <header>
             <div class="l-header p-header">
-                <div class="p-header__logo">
+                <h1 class="p-header__logo">
                     <a href="./index.html" class="p-header__logo-link">
                         <span class="p-header__logo-image">
                             <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
                         </span>
-                        <h1 class="p-header__logo-name">
+                        <span class="p-header__logo-name">
                             <span class="p-header__logo-upper">
                                 きたむら
                             </span>
                             <span class="p-header__logo-lower">
                                 ミュージックスクール
                             </span>
-                        </h1>
+                        </span>
                     </a>
-                </div>
+                </h1>
                 <div class="p-header__hamburger sp">
                     <div class="p-header__hamburger-inner">
                         <span></span>
@@ -206,7 +206,7 @@
 
                 <!-- お客様の声セクション -->
                 <section class="p-top-voice p-top-bg">
-                    <div class="l-inner">
+                    <div class="l-inner p-top-voice__inner">
                         <div class="p-top__section-title p-top__section-title--color">
                             <h2>
                                 生徒さんたちの声
@@ -215,7 +215,7 @@
                         <div class="p-top-voice__slider">
                             <div class="swiper infinite-slider">
                                 <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                                    <a href="./result_details.html" class="swiper-slide">
                                         <div class="swiper-slide__image">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/01_top/voice01_pc.jpg">
@@ -232,8 +232,8 @@
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
+                                    </a>
+                                    <a href="./blog_details.html" class="swiper-slide">
                                         <div class="swiper-slide__image">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/01_top/voice02_pc.jpg">
@@ -250,8 +250,8 @@
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
+                                    </a>
+                                    <a href="./blog_details.html" class="swiper-slide">
                                         <div class="swiper-slide__image">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/01_top/voice03_pc.jpg">
@@ -268,8 +268,8 @@
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="swiper-slide">
+                                    </a>
+                                    <a href="./blog_details.html" class="swiper-slide">
                                         <div class="swiper-slide__image">
                                             <picture>
                                                 <source media="(min-width: 768px)" srcset="./img/01_top/voice04_pc.jpg">
@@ -286,7 +286,7 @@
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
                             </div>
                             <button class="p-top-voice__arrow p-top-voice__arrow--prev" type="button" aria-label="前のスライドへ">
@@ -593,7 +593,9 @@
                             </ul>
                         </nav>
                         <div class="p-footer__logo">
-                            <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            <a href="./index.html#">
+                                <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            </a>
                         </div>
                         <!-- コピーライト -->
                         <div class="p-footer__copyright">

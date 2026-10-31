@@ -8,3 +8,9 @@
         width: 88rem;
     }
 }
+
+.p-top-voice__inner {
+    @include pc {
+        width: min(88rem, calc(100% - 12rem));
+    }
+}

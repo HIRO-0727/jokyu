@@ -20,21 +20,21 @@
     <div id="container">
         <header>
             <div class="l-header p-header">
-                <div class="p-header__logo">
+                <h1 class="p-header__logo">
                     <a href="./index.html" class="p-header__logo-link">
                         <span class="p-header__logo-image">
                             <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
                         </span>
-                        <h1 class="p-header__logo-name">
+                        <span class="p-header__logo-name">
                             <span class="p-header__logo-upper">
                                 きたむら
                             </span>
                             <span class="p-header__logo-lower">
                                 ミュージックスクール
                             </span>
-                        </h1>
+                        </span>
                     </a>
-                </div>
+                </h1>
                 <div class="p-header__hamburger sp">
                     <div class="p-header__hamburger-inner">
                         <span></span>
@@ -63,11 +63,14 @@
         <main class="p-plan">
             <div class="l-main">
                 <!-- パンくずリスト -->
-                <div class="c-breadcrumb c-breadcrumb--ultra-tall">
-                    <p>
-                        ホーム&emsp;＞&emsp;卒業実績&emsp;&nbsp;&nbsp;＞&emsp;ポップス&emsp;＞<br class="sp"><span class="pc">&emsp;</span>タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                    </p>
-                </div>
+                <nav class="c-breadcrumb c-breadcrumb--linked c-breadcrumb--ultra-tall p-result-breadcrumb" aria-label="パンくずリスト">
+                    <ol class="c-breadcrumb__list">
+                        <li class="c-breadcrumb__item p-result-breadcrumb__home"><a class="c-breadcrumb__link" href="./index.html">ホーム</a><span class="c-breadcrumb__separator" aria-hidden="true">＞</span></li>
+                        <li class="c-breadcrumb__item p-result-breadcrumb__results"><a class="c-breadcrumb__link" href="./result_list.html">卒業実績</a><span class="c-breadcrumb__separator" aria-hidden="true">＞</span></li>
+                        <li class="c-breadcrumb__item p-result-breadcrumb__category"><a class="c-breadcrumb__link" href="./result_list.html">ポップス</a><span class="c-breadcrumb__separator" aria-hidden="true">＞</span></li>
+                        <li class="c-breadcrumb__item p-result-breadcrumb__article"><span class="c-breadcrumb__current" aria-current="page">タイトルが入ります。タイトルが入ります。タイトルが入ります。</span></li>
+                    </ol>
+                </nav>
                 <div class="l-inner">
                     <div class="p-result-detail">
                         <!-- 卒業実績の本文 -->
@@ -267,7 +270,9 @@
                             </ul>
                         </nav>
                         <div class="p-footer__logo">
-                            <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            <a href="./index.html#">
+                                <img src="./img/01_top/logo_footer.svg" alt="logo">
+                            </a>
                         </div>
                         <!-- コピーライト -->
                         <div class="p-footer__copyright">

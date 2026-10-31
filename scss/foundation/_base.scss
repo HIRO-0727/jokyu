@@ -33,7 +33,7 @@ body {
     }
 }
 
-// PC,SPの表示・非常時
+// PC,SPの表示・非表示
 @include sp {
     .pc {
    display: none !important;

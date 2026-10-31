@@ -15,13 +15,26 @@
         align-items: center;
         text-align: center;
         padding-top: vw(12, 375);
-        background: rgba(#505050, 0.502);
+        // background: rgba(#505050, 0.502);
 
         @include pc {
             padding-top: 1.5rem;
         }
     }
+
+    &__contents::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(#505050, 0.4863);
+        mix-blend-mode: multiply;
+    }
+
     &__catch {
+        position: relative;
         font-weight: 700;
         color: #fff;
         font-size: vw(30, 375);
