@@ -1,7 +1,7 @@
 @use '../foundation/mixin' as *;
 
 .l-inner {
-    width: 33.5rem; // SPでは左右に2remずつの余白を確保
+    width: var(--inner-width-sp, 33.5rem); // SPでは左右に2remずつの余白を確保
     margin: 0 auto;
 
     @include pc {
