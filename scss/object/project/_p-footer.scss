@@ -40,7 +40,7 @@
     margin-inline: auto;
 
     @include pc {
-        margin-top: 2.17rem;
+        margin-top: 2.2rem;
         transition: opacity 0.4s;
 
         &:hover {
@@ -50,7 +50,7 @@
 }
 
 .p-footer__copyright {
-    margin-top: 2.89rem;
+    margin-top: 2.9rem;
     font-size: 1.5rem;
     line-height: calc(20 / 15);
     text-align: center;
@@ -65,7 +65,7 @@
 .p-footer__sns {
     margin-top: 1.6rem;
     margin-inline: auto;
-    width: 12.38rem;
+    width: 12.4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;

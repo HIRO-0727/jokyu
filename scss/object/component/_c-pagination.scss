@@ -19,7 +19,7 @@
     &__number {
         width: 4.4rem;
         height: 4.4rem;
-        border: 0.1rem solid #000;
+        border: 1px solid #000;
         font-size: 1.6rem;
         line-height: calc(28 / 16);
         font-weight: 700;
@@ -57,7 +57,7 @@
 
         &--ellipsis {
             width: 3rem;
-            border: 0.1rem transparent;
+            border: 1px transparent;
 
             @include pc {
                 width: 3.8rem;

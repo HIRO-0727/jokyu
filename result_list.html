@@ -7,7 +7,6 @@
     <link rel="icon" href="./img/01_top/logo_pc.svg" type="image/svg+xml">
     <meta name="description" content="きたむらミュージックスクールの公式サイトです。">
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -20,7 +19,7 @@
     <div id="container">
         <header>
             <div class="l-header p-header">
-                <h1 class="p-header__logo">
+                <div class="p-header__logo">
                     <a href="./index.html" class="p-header__logo-link">
                         <span class="p-header__logo-image">
                             <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
@@ -34,7 +33,7 @@
                             </span>
                         </span>
                     </a>
-                </h1>
+                </div>
                 <div class="p-header__hamburger sp">
                     <div class="p-header__hamburger-inner">
                         <span></span>
@@ -60,22 +59,22 @@
                 </nav>
             </div>
         </header>
-        <main class="p-plan">
-            <div class="l-main">
-                <!-- FVセクション -->
-                <div class="c-fv">
-                    <div class="c-fv__image">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list-pc.jpg">
-                            <img src="./img/08_result_list/result_list-sp.jpg" alt="音楽で生きるを叶える">
-                        </picture>
-                    </div>
-                    <div class="c-fv__contents">
-                        <h1 class="c-fv__catch">卒業実績</h1>
-                    </div>
-                    
+        <main class="l-main">
+            <!-- FVセクション -->
+            <div class="c-fv">
+                <div class="c-fv__image">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list-pc.jpg">
+                        <img src="./img/08_result_list/result_list-sp.jpg" alt="音楽で生きるを叶える">
+                    </picture>
                 </div>
-                <nav class="c-breadcrumb c-breadcrumb--linked" aria-label="パンくずリスト">
+                <div class="c-fv__contents">
+                    <h1 class="c-fv__catch">卒業実績</h1>
+                </div>
+
+            </div>
+            <nav class="c-breadcrumb c-breadcrumb--linked" aria-label="パンくずリスト">
+                <div class="l-inner c-breadcrumb__inner">
                     <ol class="c-breadcrumb__list">
                         <li class="c-breadcrumb__item">
                             <a class="c-breadcrumb__link" href="./index.html">ホーム</a>
@@ -85,302 +84,302 @@
                             <span class="c-breadcrumb__current" aria-current="page">卒業実績</span>
                         </li>
                     </ol>
-                </nav>
+                </div>
+            </nav>
 
-                <!-- ブログ一覧セクション -->
-                <section class="p-results-list">
-                    <div class="l-inner">
-                        <div class="c-section-title">
-                            <h2>卒業実績一覧</h2>
-                        </div>
-                        <div class="p-results-list__contents">
-                            <a class="p-results-list__item" href="./result_details.html">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list01.jpg">
-                                        <img src="./img/08_result_list/result_list01-sp.jpg" alt="ポップス">
-                                    </picture>
-                                    
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            ポップス
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list02.jpg">
-                                        <img src="./img/08_result_list/result_list02-sp.jpg" alt="ロック">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            ロック
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list03.jpg">
-                                        <img src="./img/08_result_list/result_list03-sp.jpg" alt="ジャズ">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            ジャズ
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list04.jpg">
-                                        <img src="./img/08_result_list/result_list04-sp.jpg" alt="ラテン">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            ラテン
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list05.jpg">
-                                        <img src="./img/08_result_list/result_list05-sp.jpg" alt="クラシック">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            クラシック
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list06.jpg">
-                                        <img src="./img/08_result_list/result_list06-sp.jpg" alt="ポップス">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            ポップス
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list07.jpg">
-                                        <img src="./img/08_result_list/result_list07-sp.jpg" alt="ロック">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            ロック
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list08.jpg">
-                                        <img src="./img/08_result_list/result_list08-sp.jpg" alt="ジャズ">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            ジャズ
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list09.jpg">
-                                        <img src="./img/08_result_list/result_list09-sp.jpg" alt="ラテン">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            ラテン
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-results-list__item">
-                                <div class="p-results-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list10.jpg">
-                                        <img src="./img/08_result_list/result_list10-sp.jpg" alt="クラシック">
-                                    </picture>
-                                    <div class="p-results-list__caption c-label">
-                                        <p>
-                                            クラシック
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-results-list__textarea">
-                                    <div class="p-results-list__title">
-                                        <h3>
-                                            タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                                        </h3>
-                                    </div>
-                                    <div class="p-results-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <nav class="p-results-list__pagination c-pagination c-pagination--large" aria-label="ページ送り">
-                            <div class="c-pagination__number c-pagination__number--current" aria-current="page">
-                                <p>1</p>
-                            </div>
-                            <a href="./result_list.html" class="c-pagination__number">
-                                <p>2</p>
-                            </a>
-                            <a href="./result_list.html" class="c-pagination__number">
-                                <p>3</p>
-                            </a>
-                            <div class="c-pagination__number c-pagination__number--ellipsis">
-                                <p>…</p>
-                            </div>
-                            <a href="./result_list.html" class="c-pagination__number">
-                                <p>9</p>
-                            </a>
-                        </nav>
-                        
+            <!-- ブログ一覧セクション -->
+            <section class="p-results-list">
+                <div class="l-inner">
+                    <div class="c-section-title">
+                        <h2>卒業実績一覧</h2>
                     </div>
-                    
-                    
-                </section>
+                    <div class="p-results-list__contents">
+                        <a class="p-results-list__item" href="./result_details.html">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list01.jpg">
+                                    <img src="./img/08_result_list/result_list01-sp.jpg" alt="ポップス">
+                                </picture>
 
-                
-            </div>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        ポップス
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list02.jpg">
+                                    <img src="./img/08_result_list/result_list02-sp.jpg" alt="ロック">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        ロック
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list03.jpg">
+                                    <img src="./img/08_result_list/result_list03-sp.jpg" alt="ジャズ">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        ジャズ
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list04.jpg">
+                                    <img src="./img/08_result_list/result_list04-sp.jpg" alt="ラテン">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        ラテン
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list05.jpg">
+                                    <img src="./img/08_result_list/result_list05-sp.jpg" alt="クラシック">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        クラシック
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list06.jpg">
+                                    <img src="./img/08_result_list/result_list06-sp.jpg" alt="ポップス">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        ポップス
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list07.jpg">
+                                    <img src="./img/08_result_list/result_list07-sp.jpg" alt="ロック">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        ロック
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list08.jpg">
+                                    <img src="./img/08_result_list/result_list08-sp.jpg" alt="ジャズ">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        ジャズ
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list09.jpg">
+                                    <img src="./img/08_result_list/result_list09-sp.jpg" alt="ラテン">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        ラテン
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-results-list__item">
+                            <div class="p-results-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/08_result_list/result_list10.jpg">
+                                    <img src="./img/08_result_list/result_list10-sp.jpg" alt="クラシック">
+                                </picture>
+                                <div class="p-results-list__caption c-label">
+                                    <p>
+                                        クラシック
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-results-list__textarea">
+                                <div class="p-results-list__title">
+                                    <h3>
+                                        タイトルが入ります。タイトルが入ります。タイトルが入ります。
+                                    </h3>
+                                </div>
+                                <div class="p-results-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="p-results-list__pagination c-pagination c-pagination--large" aria-label="ページ送り">
+                        <div class="c-pagination__number c-pagination__number--current" aria-current="page">
+                            <p>1</p>
+                        </div>
+                        <a href="./result_list.html" class="c-pagination__number">
+                            <p>2</p>
+                        </a>
+                        <a href="./result_list.html" class="c-pagination__number">
+                            <p>3</p>
+                        </a>
+                        <div class="c-pagination__number c-pagination__number--ellipsis">
+                            <p>…</p>
+                        </div>
+                        <a href="./result_list.html" class="c-pagination__number">
+                            <p>9</p>
+                        </a>
+                    </nav>
+
+                </div>
+
+
+            </section>
+
+
         </main>
 
         <!-- お問い合わせ・トップへ戻るボタン -->
@@ -459,8 +458,6 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -135,7 +135,7 @@
 
         &--price {
             > .p-plan-monthly__cell {
-                border-top: 0.5px solid #000;
+                border-top: 1px solid #808080;
                 font-weight: 700;
             }
         }
@@ -144,7 +144,7 @@
     &__cell {
         padding: 0;
         border: 0;
-        border-right: 0.5px solid #000;
+        border-right: 1px solid #808080;
         background-color: #fff;
         font-size: 1.6rem;
         font-weight: 500;

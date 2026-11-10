@@ -13,71 +13,20 @@ $(function() {
         $('.p-header__hamburger').removeClass('active')
         $('.p-header__nav').removeClass('active')
     });
-
-    // SCSSで指定した間隔をremからpxに変換
-    function getVoiceGap() {
-        const gap = parseFloat(
-            $('.p-top-voice__slider').css('--voice-slide-gap')
-        );
-        const rem = parseFloat($('html').css('font-size'));
-
-        return gap * rem;
-    }
-
-    // お客様の声スライダー
-    const infiniteSlider = new Swiper(".infinite-slider", {
-        loop: true,
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-        spaceBetween: 0,
-        speed: 1000,
-
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
-                spaceBetween: getVoiceGap(),
-            },
-        },
-    });
-
-    // 前のスライドへ
-    $('.p-top-voice__arrow--prev').click(function() {
-        infiniteSlider.slidePrev();
-    });
-
-    // 次のスライドへ
-    $('.p-top-voice__arrow--next').click(function() {
-        infiniteSlider.slideNext();
-    });
-
-    // 画面幅に合わせて間隔を変更
-    $(window).on('resize', function() {
-        const gap = getVoiceGap();
-
-        infiniteSlider.params.breakpoints[768].spaceBetween = gap;
-        infiniteSlider.params.spaceBetween = gap;
-        infiniteSlider.update();
-    });
-
-});
-
-// アコーディオン開閉
-
-$('.p-top-faq__answer').css('display', 'flex').hide();
-
-$('.p-top-faq__question').on('click', function(){
-  $(this).toggleClass('active');
-  $(this).next().slideToggle();
 });
 
 // お問い合わせ・トップへ戻るボタン
 $(function() {
+    const fv = document.querySelector('.p-top-fv, .c-fv');
     const actions = document.querySelector('.p-footer-actions');
     const footer = document.querySelector('footer');
     const $standaloneTop = $('.c-top').not('.p-footer-actions__top');
 
     function updateFooterActions() {
-        const isVisible = window.scrollY > 100;
+        // const isVisible = window.scrollY > 100;
+        const isVisible = fv
+            ? fv.getBoundingClientRect().bottom <= 0
+            : window.scrollY > 100;
 
         $('.p-footer-actions').toggleClass('active', isVisible);
         $standaloneTop.toggleClass('active', isVisible);

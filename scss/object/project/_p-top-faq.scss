@@ -6,7 +6,7 @@
     padding-bottom: 5rem;
 
     @include pc {
-        padding-bottom: 7.05rem;
+        padding-bottom: 7.1rem;
     }
 }
 
@@ -22,7 +22,7 @@
 .p-top-faq__answer {
     display: flex;
     align-items: center;
-    column-gap: 2.03rem;
+    column-gap: 2.0rem;
 
     @include pc {
         padding-left: 2rem;
@@ -87,8 +87,8 @@
     }
 
     &--2 {
-        padding-top: 1.44rem;
-        padding-bottom: 1.16rem;
+        padding-top: 1.4rem;
+        padding-bottom: 1.2rem;
 
         @include pc {
             padding-top: 2rem;
@@ -100,9 +100,9 @@
 }
 
 .p-top-faq__list {
-    border-top: 0.05rem solid #000;
+    border-top: 1px solid #808080;
 }
 
 .p-top-faq__item {
-    border-bottom: 0.05rem solid #000;
+    border-bottom: 1px solid #808080;
 }
