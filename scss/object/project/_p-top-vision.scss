@@ -63,7 +63,7 @@
     &__arrow {
         position: absolute;
         top: 0;
-        left: calc(50% + 0.126rem);
+        left: calc(50% + 0.05rem);
         transform: translateX(-50%);
         width: 3.1rem;
         height: auto;
@@ -163,10 +163,10 @@
     }
 
     &__item:first-child &__eng::before {
-        top: -2.8rem;
+        top: -2.7rem;
 
         @include pc {
-            top: -2.4rem;
+            top: -2.3rem;
         }
     }
 
