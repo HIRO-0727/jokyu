@@ -20,9 +20,6 @@ $(function() {
 });
 
 // アコーディオン開閉
-
-$('.p-top-faq__answer').css('display', 'flex').hide();
-
 $('.p-top-faq__item').on('click', function () {
     const $item = $(this);
 

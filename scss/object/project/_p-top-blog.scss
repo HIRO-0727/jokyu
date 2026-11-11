@@ -17,8 +17,8 @@
 
         @include pc {
             margin-top: 3.5rem;
-            flex-direction: row;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
             column-gap: 5rem;
         }
     }
