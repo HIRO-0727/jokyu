@@ -161,13 +161,13 @@
             position: absolute;
             left: 0;
             top: 0;
+            bottom: 10px;
             width: 3px;
-            height: 5rem;
             background-color: #000;
 
             @include pc {
-                top: 0.7rem;
-                height: 2rem;
+                top: 8px;
+                bottom: 12px;
             }
         }
     }
@@ -218,6 +218,14 @@
         font-weight: 700;
         line-height: calc(33 / 20);
         color: $color-main;
+
+        @include pc {
+            transition: opacity 0.4s;
+
+            &:hover {
+                    opacity: 0.7;
+                }
+        }
 
         a {
             text-decoration-line: underline;
