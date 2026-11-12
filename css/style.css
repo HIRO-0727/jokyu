@@ -452,9 +452,14 @@ img {
   color: #CB0000;
 }
 .c-plan-mark--dash::before {
-  width: 30px;
+  width: min(3rem, 8vw);
   height: 1px;
   border-radius: 0;
+}
+@media (min-width: 768px) {
+  .c-plan-mark--dash::before {
+    width: min(3rem, 2.7777777778vw);
+  }
 }
 
 .c-fv {
@@ -2001,6 +2006,7 @@ img {
 }
 
 .p-plan-price {
+  --inner-width-sp: calc(100% - 4rem);
   padding-top: 4.6rem;
 }
 @media (min-width: 768px) {
@@ -2076,6 +2082,7 @@ img {
 }
 
 .p-plan-monthly {
+  --inner-width-sp: calc(100% - 4rem);
   padding-top: 3.6rem;
   padding-bottom: 12.4rem;
 }
@@ -2152,6 +2159,9 @@ img {
   background-color: rgba(80, 80, 80, 0.251);
   box-shadow: none;
 }
+.p-plan-monthly__scroll-control:disabled {
+  display: none;
+}
 .p-plan-monthly__scroll-control:focus-visible {
   outline: 2px solid #cb0000;
   outline-offset: 4px;
@@ -2224,17 +2234,6 @@ img {
   width: max-content;
   margin-inline: auto;
 }
-.p-plan-monthly__cell--fixed {
-  position: sticky;
-  left: 0;
-  z-index: 2;
-}
-@media (min-width: 768px) {
-  .p-plan-monthly__cell--fixed {
-    position: static;
-    z-index: auto;
-  }
-}
 .p-plan-monthly__cell--empty {
   border: 0;
   background-color: #fff;
@@ -2249,7 +2248,7 @@ img {
   }
 }
 .p-plan-monthly__cell--plan {
-  border-color: #fff;
+  border-right: 0;
   background-color: #000;
   color: #fff;
   font-size: 2rem;
@@ -2313,6 +2312,7 @@ img {
 }
 
 .p-plan-breadcrumb {
+  --inner-width-sp: calc(100% - 4rem);
   --breadcrumb-gap: 1.9rem;
 }
 
