@@ -168,6 +168,10 @@
             border-right: 0.2rem solid #000;
             border-bottom: 0.2rem solid #000;
             transform: translateY(-60%) rotate(45deg);
+
+            @include pc {
+                top: calc(50% - 0.4rem);
+            }
         }
     }
 
@@ -189,9 +193,12 @@
 
     &__textarea {
         width: 100%;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
 
         @include pc {
             flex: 1;
+            line-height: calc(33 / 15);
         }
 
         textarea {

@@ -3404,6 +3404,11 @@ img {
   -webkit-transform: translateY(-60%) rotate(45deg);
           transform: translateY(-60%) rotate(45deg);
 }
+@media (min-width: 768px) {
+  .p-contact__checkitem input[type=checkbox]:checked + label::after {
+    top: calc(50% - 0.4rem);
+  }
+}
 .p-contact__contents-02 {
   margin-top: 1.4rem;
 }
@@ -3422,12 +3427,15 @@ img {
 }
 .p-contact__textarea {
   width: 100%;
+  font-size: 1.5rem;
+  line-height: 1.6666666667;
 }
 @media (min-width: 768px) {
   .p-contact__textarea {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    line-height: 2.2;
   }
 }
 .p-contact__textarea textarea {
