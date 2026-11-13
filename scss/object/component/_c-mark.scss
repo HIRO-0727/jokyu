@@ -22,10 +22,14 @@
     }
 
     &--dash {
-    &::before {
-        width: 30px;
-        height: 1px;
-        border-radius: 0;
+        &::before {
+            width: min(3rem, vw(30, 375));
+            height: 1px;
+            border-radius: 0;
+
+            @include pc {
+                width: min(3rem, vw(30, 1080));
+            }
+        }
     }
-}
 }

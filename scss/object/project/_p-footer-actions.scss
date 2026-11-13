@@ -7,11 +7,16 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 900;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.4s, visibility 0.4s;
+
+    &--sticky {
+        position: sticky;
+        left: auto;
+    }
 
     @include pc {
         --top-gap: 2.927rem;

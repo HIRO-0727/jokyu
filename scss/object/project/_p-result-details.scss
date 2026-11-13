@@ -69,8 +69,8 @@
         width: 100%;
         
 
-        border-top: 0.5px solid #707070;
-        border-left: 0.5px solid #707070;
+        border-top: 1px solid #707070;
+        border-left: 1px solid #707070;
 
         @include pc {
             margin-top: 0;
@@ -88,10 +88,11 @@
         padding-left: 1rem;
 
         display: flex;
-        align-items: end;
+        // align-items: end;
+        align-items: center;
 
-        border-right: 0.5px solid #707070;
-        border-bottom: 0.5px solid #707070;
+        border-right: 1px solid #707070;
+        border-bottom: 1px solid #707070;
 
         @include pc {
             padding-left: 2rem;

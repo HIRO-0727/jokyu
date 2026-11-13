@@ -9,7 +9,3 @@ $color-main: #CB0000;
 @function vw($pixelSize, $baseWidth: 1080) {
     @return calc($pixelSize / $baseWidth * 100vw);
 }
-
-@function hvw($pixelSize) {
-    @return min(calc($pixelSize / 1080 * 100vw), $pixelSize * 1px);
-}

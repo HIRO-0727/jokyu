@@ -2,12 +2,11 @@
 @use '../../foundation/variable' as *;
 
 .p-plan-price {
+    --inner-width-sp: calc(100% - 4rem);
     padding-top: 4.6rem;
-    padding-inline: 2rem;
 
     @include pc {
         padding-top: 6.7rem;
-        padding-inline: 9.6rem;
     }
 
     &__contents {

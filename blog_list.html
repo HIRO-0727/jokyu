@@ -7,7 +7,6 @@
     <link rel="icon" href="./img/01_top/logo_pc.svg" type="image/svg+xml">
     <meta name="description" content="きたむらミュージックスクールの公式サイトです。">
     <meta name="robots" content="noindex">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -17,10 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="container">
-        <header>
-            <div class="l-header p-header">
-                <h1 class="p-header__logo">
+    <div id="container" class="l-container--sticky-actions">
+        <header class="l-header p-header">
+            <div class="l-inner p-header__inner">
+                <div class="p-header__logo">
                     <a href="./index.html" class="p-header__logo-link">
                         <span class="p-header__logo-image">
                             <img src="./img/01_top/logo_pc.svg" alt="ロゴ" aria-hidden="true">
@@ -34,7 +33,7 @@
                             </span>
                         </span>
                     </a>
-                </h1>
+                </div>
                 <div class="p-header__hamburger sp">
                     <div class="p-header__hamburger-inner">
                         <span></span>
@@ -60,22 +59,22 @@
                 </nav>
             </div>
         </header>
-        <main class="p-plan">
-            <div class="l-main">
-                <!-- FVセクション -->
-                <div class="c-fv">
-                    <div class="c-fv__image">
-                        <picture>
-                            <source media="(min-width: 768px)" srcset="./img/03_bl/bl-fv-pc.jpg">
-                            <img src="./img/03_bl/bl-fv-sp.jpg" alt="音楽で生きるを叶える">
-                        </picture>
-                    </div>
-                    <div class="c-fv__contents">
-                        <h1 class="c-fv__catch">ブログ</h1>
-                    </div>
-                    
+        <main class="l-main">
+            <!-- FVセクション -->
+            <div class="c-fv">
+                <div class="c-fv__image">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-fv-pc.jpg">
+                        <img src="./img/03_bl/bl-fv-sp.jpg" alt="音楽で生きるを叶える">
+                    </picture>
                 </div>
-                <nav class="c-breadcrumb c-breadcrumb--linked" aria-label="パンくずリスト">
+                <div class="c-fv__contents">
+                    <h1 class="c-fv__catch">ブログ</h1>
+                </div>
+
+            </div>
+            <nav class="c-breadcrumb c-breadcrumb--linked" aria-label="パンくずリスト">
+                <div class="l-inner c-breadcrumb__inner">
                     <ol class="c-breadcrumb__list">
                         <li class="c-breadcrumb__item">
                             <a class="c-breadcrumb__link" href="./index.html">ホーム</a>
@@ -85,336 +84,333 @@
                             <span class="c-breadcrumb__current" aria-current="page">ブログ</span>
                         </li>
                     </ol>
-                </nav>
+                </div>
+            </nav>
 
-                <!-- ブログ一覧セクション -->
-                <section class="p-blog-list">
-                    <div class="l-inner">
-                        <div class="c-section-title">
-                            <h2>ブログ一覧</h2>
-                        </div>
-                        <div class="p-blog-list__contents p-article-list">
-                            <a class="p-article-list__item" href="./blog_details.html">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-guitar-pc.jpg">
-                                        <img src="./img/03_bl/bl-guitar-sp.jpg" alt="ギター">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            ギター
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </a>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-worries-pc.jpg">
-                                        <img src="./img/03_bl/bl-worries-sp.jpg" alt="集客方法">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            集客方法
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>集客してる間は売れないという法則</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-singer-pc.jpg">
-                                        <img src="./img/03_bl/bl-singer-sp.jpg" alt="SNS">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            SNS
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>フォロワーではなくファンを増やせとは？</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-guitar-pc.jpg">
-                                        <img src="./img/03_bl/bl-guitar-sp.jpg" alt="ギター">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            ギター
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-worries-pc.jpg">
-                                        <img src="./img/03_bl/bl-worries-sp.jpg" alt="集客方法">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            集客方法
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>集客してる間は売れないという法則</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-singer-pc.jpg">
-                                        <img src="./img/03_bl/bl-singer-sp.jpg" alt="SNS">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            SNS
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>フォロワーではなくファンを増やせとは？</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-guitar-pc.jpg">
-                                        <img src="./img/03_bl/bl-guitar-sp.jpg" alt="ギター">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            ギター
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-worries-pc.jpg">
-                                        <img src="./img/03_bl/bl-worries-sp.jpg" alt="集客方法">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            集客方法
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>集客してる間は売れないという法則</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-singer-pc.jpg">
-                                        <img src="./img/03_bl/bl-singer-sp.jpg" alt="SNS">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            SNS
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>フォロワーではなくファンを増やせとは？</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="p-article-list__item">
-                                <div class="p-article-list__image">
-                                    <picture>
-                                        <source media="(min-width: 768px)" srcset="./img/03_bl/bl-guitar-pc.jpg">
-                                        <img src="./img/03_bl/bl-guitar-sp.jpg" alt="ギター">
-                                    </picture>
-                                    <div class="p-article-list__caption c-label">
-                                        <p>
-                                            ギター
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="p-article-list__textarea">
-                                    <div class="p-article-list__title">
-                                        <h3>アルペジオが劇的に向上する3つの習慣</h3>
-                                    </div>
-                                    <div class="p-article-list__date">
-                                        <span>
-                                            0000.00.00
-                                        </span>
-                                    </div>
-                                    <div class="p-article-list__desc">
-                                        <p>
-                                            本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        <nav class="p-blog-list__pagination c-pagination" aria-label="ページ送り">
-                            <div class="c-pagination__number c-pagination__number--current" aria-current="page">
-                                <p>1</p>
-                            </div>
-                            <a href="./blog_list.html" class="c-pagination__number">
-                                <p>2</p>
-                            </a>
-                            <a href="./blog_list.html" class="c-pagination__number">
-                                <p>3</p>
-                            </a>
-                            <div class="c-pagination__number c-pagination__number--ellipsis">
-                                <p>…</p>
-                            </div>
-                            <a href="./blog_list.html" class="c-pagination__number">
-                                <p>9</p>
-                            </a>
-                        </nav>
-                        
+            <!-- ブログ一覧セクション -->
+            <section class="p-blog-list">
+                <div class="l-inner">
+                    <div class="c-section-title">
+                        <h2>ブログ一覧</h2>
                     </div>
-                    
-                    
-                </section>
+                    <div class="p-blog-list__contents p-article-list">
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-guitar-pc.jpg">
+                                    <img src="./img/03_bl/bl-guitar-sp.jpg" alt="ギター">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        ギター
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
 
-                
-            </div>
-        </main>
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-worries-pc.jpg">
+                                    <img src="./img/03_bl/bl-worries-sp.jpg" alt="集客方法">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        集客方法
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>集客してる間は売れないという法則</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
 
-        <!-- お問い合わせ・トップへ戻るボタン -->
-        <div class="l-inquiry">
-            <div class="p-footer-actions">
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-singer-pc.jpg">
+                                    <img src="./img/03_bl/bl-singer-sp.jpg" alt="SNS">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        SNS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>フォロワーではなくファンを増やせとは？</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-guitar-pc.jpg">
+                                    <img src="./img/03_bl/bl-guitar-sp.jpg" alt="ギター">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        ギター
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-worries-pc.jpg">
+                                    <img src="./img/03_bl/bl-worries-sp.jpg" alt="集客方法">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        集客方法
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>集客してる間は売れないという法則</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-singer-pc.jpg">
+                                    <img src="./img/03_bl/bl-singer-sp.jpg" alt="SNS">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        SNS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>フォロワーではなくファンを増やせとは？</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-guitar-pc.jpg">
+                                    <img src="./img/03_bl/bl-guitar-sp.jpg" alt="ギター">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        ギター
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-worries-pc.jpg">
+                                    <img src="./img/03_bl/bl-worries-sp.jpg" alt="集客方法">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        集客方法
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>集客してる間は売れないという法則</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-singer-pc.jpg">
+                                    <img src="./img/03_bl/bl-singer-sp.jpg" alt="SNS">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        SNS
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>フォロワーではなくファンを増やせとは？</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="p-article-list__item" href="./blog_details.html">
+                            <div class="p-article-list__image">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="./img/03_bl/bl-guitar-pc.jpg">
+                                    <img src="./img/03_bl/bl-guitar-sp.jpg" alt="ギター">
+                                </picture>
+                                <div class="p-article-list__caption c-label">
+                                    <p>
+                                        ギター
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="p-article-list__textarea">
+                                <div class="p-article-list__title">
+                                    <h3>アルペジオが劇的に向上する3つの習慣</h3>
+                                </div>
+                                <div class="p-article-list__date">
+                                    <span>
+                                        0000.00.00
+                                    </span>
+                                </div>
+                                <div class="p-article-list__desc">
+                                    <p>
+                                        本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <nav class="p-blog-list__pagination c-pagination" aria-label="ページ送り">
+                        <div class="c-pagination__number c-pagination__number--current" aria-current="page">
+                            <p>1</p>
+                        </div>
+                        <a href="./blog_list.html" class="c-pagination__number">
+                            <p>2</p>
+                        </a>
+                        <a href="./blog_list.html" class="c-pagination__number">
+                            <p>3</p>
+                        </a>
+                        <div class="c-pagination__number c-pagination__number--ellipsis">
+                            <p>…</p>
+                        </div>
+                        <a href="./blog_list.html" class="c-pagination__number">
+                            <p>9</p>
+                        </a>
+                    </nav>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- お問い合わせ・トップへ戻るボタン -->
+            <div class="p-footer-actions p-footer-actions--sticky">
                 <div class="p-footer-actions__inquiry">
                     <a href="./contact.html" class="c-inquiry">お問い合わせ</a>
                 </div>
@@ -424,7 +420,7 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </main>
 
         <footer>
             <div class="l-footer p-footer">
@@ -488,8 +484,6 @@
 
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

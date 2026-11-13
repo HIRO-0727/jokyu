@@ -18,7 +18,6 @@
         text-align: center;
 
         @include pc {
-            // font-size: hvw(35);
             font-size: 3.5rem;
             line-height: calc(50 / 35);
         }
@@ -64,9 +63,9 @@
     &__arrow {
         position: absolute;
         top: 0;
-        left: calc(50% + 0.126rem);
+        left: calc(50% + 0.05rem);
         transform: translateX(-50%);
-        width: 3.05rem;
+        width: 3.1rem;
         height: auto;
         object-fit: contain;
         z-index: 1;
@@ -153,21 +152,21 @@
     }
 
     &__jpn {
-        padding-left: 4.15rem;
+        padding-left: 4.2rem;
         text-align: left;
 
         @include pc {
-            padding-left: 3.95rem;
+            padding-left: 4.0rem;
             font-size: 2.3rem;
             line-height: calc(50 / 23);
         }
     }
 
     &__item:first-child &__eng::before {
-        top: -2.8rem;
+        top: -2.7rem;
 
         @include pc {
-            top: -2.4rem;
+            top: -2.3rem;
         }
     }
 

@@ -22,8 +22,8 @@
 
     @include pc {
         width: 30rem;
-        padding-top: 0.5rem;
-        padding-right: 0.2rem;
+        padding-top: 0.3rem;
+        padding-left: 0.1rem;
 
         &:hover {
             color: $color-main;
@@ -35,12 +35,14 @@
 
 // トップへ戻るボタン
 .c-top {
-    width: 6.8rem;
-    height: 6.8rem;
+    $top-size: 6.8rem;
+
+    width: $top-size;
+    height: $top-size;
     position: fixed;
     bottom: 38.1rem;
     right: 2rem;
-    z-index: 999;
+    z-index: 900;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.4s, visibility 0.4s;
@@ -51,12 +53,24 @@
     }
 
     &--2 {
-        bottom: 32.1rem;
-        right: 3rem;
+        --viewport-bottom: 2rem;
+        --page-end-bottom: 32.1rem;
+
+        display: block;
+        position: sticky;
+        bottom: var(--viewport-bottom);
+        right: auto;
+        margin-left: auto;
+        margin-right: 3rem;
+
+        // ページ全体の高さを保ったまま、最下部でのボタンの位置を合わせる
+        margin-top: calc(0px - var(--page-end-bottom) - $top-size);
+        margin-bottom: var(--page-end-bottom);
 
         @include pc {
-            bottom: 30.4rem;
-            right: 10rem;
+            --viewport-bottom: 3rem;
+            --page-end-bottom: 30.4rem;
+            margin-right: 10rem;
         }
     }
 

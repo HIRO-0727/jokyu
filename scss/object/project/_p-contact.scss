@@ -144,8 +144,8 @@
             width: 2rem;
             height: 2rem;
             border-style: solid;
-            border-color: #000;
-            border-width: 0.05rem;
+            border-color: #808080;
+            border-width: 1px;
 
             @include pc {
                 top: calc(50% - 0.4rem);
@@ -168,11 +168,15 @@
             border-right: 0.2rem solid #000;
             border-bottom: 0.2rem solid #000;
             transform: translateY(-60%) rotate(45deg);
+
+            @include pc {
+                top: calc(50% - 0.4rem);
+            }
         }
     }
 
     &__contents-02 {
-        margin-top: 1.35rem;
+        margin-top: 1.4rem;
 
         @include pc {
             margin-top: 2.6rem;
@@ -189,9 +193,12 @@
 
     &__textarea {
         width: 100%;
+        font-size: 1.5rem;
+        line-height: calc(25 / 15);
 
         @include pc {
             flex: 1;
+            line-height: calc(33 / 15);
         }
 
         textarea {
@@ -199,7 +206,7 @@
             width: 100%;
             height: 19rem;
             resize: none;
-            border: solid #000 0.05rem;
+            border: solid #808080 1px;
             padding: 1.2rem 2rem 0;
 
             @include pc {
@@ -260,7 +267,7 @@ input[type="tel"],
 input[type="email"] {
     // background-color: #fff;
     height: 4rem;
-    border: solid #000 0.05rem;
+    border: solid #808080 1px;
     width: 100%;
     padding-inline: 2rem;
     font-size: 1.5rem;
