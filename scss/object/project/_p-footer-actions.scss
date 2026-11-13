@@ -13,6 +13,11 @@
     pointer-events: none;
     transition: opacity 0.4s, visibility 0.4s;
 
+    &--sticky {
+        position: sticky;
+        left: auto;
+    }
+
     @include pc {
         --top-gap: 2.927rem;
     }

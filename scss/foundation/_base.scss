@@ -52,6 +52,11 @@ img {
 #container {
     width: 100%;
     overflow: hidden;
+
+    &.l-container--sticky-actions {
+        display: flow-root;
+        overflow: clip;
+    }
 }
 
 .qa-bg {
