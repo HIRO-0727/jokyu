@@ -131,7 +131,7 @@ html {
        appearance: none;
   -webkit-text-size-adjust: 100%;
   word-break: break-all;
-  font-size: 10px;
+  font-size: 62.5px;
   scroll-behavior: smooth;
 }
 @media (min-width: 768px) and (max-width: 940px) {
