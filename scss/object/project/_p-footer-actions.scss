@@ -1,7 +1,7 @@
 @use '../../foundation/mixin' as *;
 
 .p-footer-actions {
-    --top-gap: 1.825rem;
+    --top-gap: 1.8rem;
 
     position: fixed;
     bottom: 0;
@@ -19,7 +19,7 @@
     }
 
     @include pc {
-        --top-gap: 2.927rem;
+        --top-gap: 2.9rem;
     }
 
     &.active {
