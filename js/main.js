@@ -52,44 +52,29 @@ $(function() {
 
     const scrollElement = $scroll[0];
 
+    // 表を横にスクロールできる距離
+    function getMaxScroll() {
+        return scrollElement.scrollWidth - scrollElement.clientWidth;
+    }
+
     // 表の位置をスライダーに反映
     function syncScrollControl() {
-        const maxScroll =
-            scrollElement.scrollWidth - scrollElement.clientWidth;
-
+        const maxScroll = getMaxScroll();
         const progress = maxScroll > 0
             ? scrollElement.scrollLeft / maxScroll * 100
             : 0;
 
-        $control.val(Math.max(0, Math.min(100, progress)));
+        $control.val(progress);
         $control.prop('disabled', maxScroll <= 0);
     }
 
     // スライダー操作を表に反映
     $control.on('input', function() {
-        const maxScroll = Math.max(
-            0,
-            scrollElement.scrollWidth - scrollElement.clientWidth
-        );
-
-        scrollElement.scrollLeft =
-            maxScroll * Number(this.value) / 100;
+        scrollElement.scrollLeft = getMaxScroll() * this.valueAsNumber / 100;
     });
 
-    // 指やキーボードで表を動かした場合も連動
     $scroll.on('scroll', syncScrollControl);
-
-    // 画面幅や表のサイズが変わったら再計算
-    const resizeObserver = new ResizeObserver(syncScrollControl);
-
-    resizeObserver.observe(scrollElement);
-
-    const tableElement =
-            scrollElement.querySelector('.p-plan-monthly__table');
-
-    if (tableElement) {
-        resizeObserver.observe(tableElement);
-    }
+    $(window).on('resize', syncScrollControl);
 
     syncScrollControl();
 });

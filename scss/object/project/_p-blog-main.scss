@@ -73,6 +73,16 @@
         column-gap: 0.3rem;
     }
 
+    &__sns-link {
+        @include pc {
+            transition: opacity 0.4s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
     &__intro {
         margin-top: 2.7rem;
 
