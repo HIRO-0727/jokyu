@@ -12,14 +12,17 @@
     position: fixed;
     top: 5rem;
     right: -120%;
+    visibility: hidden;
 
     &.active {
         right: 0;
+        visibility: visible;
     }
 
     @include pc {
         position: static;
         top: auto;
         right: auto;
+        visibility: visible;
     }
 }

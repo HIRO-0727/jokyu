@@ -1,17 +1,22 @@
 "use strict";
 
 $(function() {
+    // ハンバーガーメニュー
+    const $button = $('.p-header__hamburger');
+    const $nav = $('.p-header__nav');
 
-    //ハンバーガーメニュー
+    function setMenuOpen(isOpen) {
+        $button.toggleClass('active', isOpen);
+        $nav.toggleClass('active', isOpen);
+        $button.attr('aria-expanded', String(isOpen));
+    }
 
-    $('.p-header__hamburger').click(function() {
-        $(this).toggleClass('active')
-        $('.p-header__nav').toggleClass('active')
-    })
+    $button.on('click', function() {
+        setMenuOpen($button.attr('aria-expanded') === 'false');
+    });
 
-    $('.p-header__nav ul li a').click(function() {
-        $('.p-header__hamburger').removeClass('active')
-        $('.p-header__nav').removeClass('active')
+    $nav.find('a').on('click', function() {
+        setMenuOpen(false);
     });
 });
 
