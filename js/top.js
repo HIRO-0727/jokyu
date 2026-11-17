@@ -2,27 +2,23 @@
 
 $(function() {
     // お客様の声スライダー
-    const infiniteSlider = new Swiper(".infinite-slider", {
+    new Swiper(".infinite-slider", {
         loop: true,
         slidesPerView: 'auto',
         speed: 1000,
-    });
-
-    // 前のスライドへ
-    $('.p-top-voice__arrow--prev').click(function() {
-        infiniteSlider.slidePrev();
-    });
-
-    // 次のスライドへ
-    $('.p-top-voice__arrow--next').click(function() {
-        infiniteSlider.slideNext();
+        navigation: {
+            prevEl: '.p-top-voice__arrow--prev',
+            nextEl: '.p-top-voice__arrow--next',
+        },
     });
 });
 
 // アコーディオン開閉
-$('.p-top-faq__item').on('click', function () {
-    const $item = $(this);
+$('.p-top-faq__question').on('click', function () {
+    const $question = $(this);
+    const answer = document.getElementById($question.attr('aria-controls'));
+    const isExpanded = $question.attr('aria-expanded') === 'true';
 
-    $item.children('.p-top-faq__question').toggleClass('active');
-    $item.children('.p-top-faq__answer').stop(true, true).slideToggle();
+    $question.attr('aria-expanded', String(!isExpanded));
+    $(answer).stop(true, true).slideToggle();
 });

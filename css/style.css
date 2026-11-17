@@ -1388,12 +1388,12 @@ img {
   }
 }
 
-.p-top-voice .swiper-slide {
+.p-top-voice .p-top-voice__slide {
   width: 100%;
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  .p-top-voice .swiper-slide {
+  .p-top-voice .p-top-voice__slide {
     width: calc((100% - 7rem) / 3);
     -webkit-margin-end: 3.5rem;
             margin-inline-end: 3.5rem;
@@ -1401,20 +1401,20 @@ img {
 }
 
 @media (min-width: 768px) {
-  .swiper-slide {
+  .p-top-voice__slide {
     -webkit-transition: opacity 0.4s;
     transition: opacity 0.4s;
   }
-  .swiper-slide:hover {
+  .p-top-voice__slide:hover {
     opacity: 0.7;
   }
 }
 
-.p-top-voice .swiper-slide__image {
+.p-top-voice .p-top-voice__slide-image {
   position: relative;
   height: var(--voice-image-height);
 }
-.p-top-voice .swiper-slide__image img {
+.p-top-voice .p-top-voice__slide-image img {
   position: absolute;
   inset: 0;
   height: 100%;
@@ -1422,7 +1422,7 @@ img {
      object-fit: cover;
 }
 @media (min-width: 768px) {
-  .p-top-voice .swiper-slide__image img {
+  .p-top-voice .p-top-voice__slide-image img {
     -webkit-transform-origin: center center;
             transform-origin: center center;
     -webkit-transition: -webkit-transform 0.4s ease;
@@ -1432,25 +1432,25 @@ img {
   }
 }
 @media (min-width: 768px) {
-  .p-top-voice .swiper-slide__image {
+  .p-top-voice .p-top-voice__slide-image {
     overflow: visible;
   }
-  .p-top-voice .swiper-slide__image:hover img {
+  .p-top-voice .p-top-voice__slide-image:hover img {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
 }
 
-.swiper-slide__text {
+.p-top-voice__slide-text {
   margin-top: 2.7rem;
 }
 @media (min-width: 768px) {
-  .swiper-slide__text {
+  .p-top-voice__slide-text {
     margin-top: 1.7rem;
   }
 }
 
-.swiper-slide__title {
+.p-top-voice__slide-title {
   font-size: 2.2rem;
   font-weight: 700;
   line-height: 1.5;
@@ -1458,7 +1458,7 @@ img {
   text-align: center;
 }
 
-.swiper-slide__desc {
+.p-top-voice__slide-desc {
   margin-top: 1rem;
   font-size: 1.8rem;
   line-height: 1.6666666667;
@@ -1669,6 +1669,14 @@ img {
 
 .p-top-faq__question {
   position: relative;
+  width: 100%;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.p-top-faq__question:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
 }
 .p-top-faq__question::after {
   position: absolute;
@@ -1695,7 +1703,7 @@ img {
     right: 2.6rem;
   }
 }
-.p-top-faq__question.active::after {
+.p-top-faq__question[aria-expanded=true]::after {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -1742,7 +1750,6 @@ img {
 
 .p-top-faq__item {
   border-bottom: 1px solid #808080;
-  cursor: pointer;
 }
 
 .p-top-faq__item--4 {

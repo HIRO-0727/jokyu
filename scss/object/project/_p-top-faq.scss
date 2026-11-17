@@ -36,6 +36,15 @@
 
 .p-top-faq__question {
     position: relative;
+    width: 100%;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+
+    &:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: -2px;
+    }
 
     &::after {
         position: absolute;
@@ -58,7 +67,7 @@
         }
     }
 
-    &.active::after {
+    &[aria-expanded="true"]::after {
         transform: rotate(-180deg);
     }
 }
@@ -101,7 +110,6 @@
 
 .p-top-faq__item {
     border-bottom: 1px solid #808080;
-    cursor: pointer;
 }
 
 .p-top-faq__item--4 {

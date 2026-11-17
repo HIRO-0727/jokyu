@@ -24,7 +24,7 @@
     
 }
 
-.p-top-voice .swiper-slide {
+.p-top-voice .p-top-voice__slide {
     width: 100%;
     margin-top: 0;
 
@@ -36,7 +36,7 @@
     }
 }
 
-.swiper-slide {
+.p-top-voice__slide {
     @include pc {
         transition: opacity 0.4s;
 
@@ -47,7 +47,7 @@
     
 }
 
-.p-top-voice .swiper-slide__image {
+.p-top-voice .p-top-voice__slide-image {
     position: relative;
     height: var(--voice-image-height);
 
@@ -72,7 +72,7 @@
     }
 }
 
-.swiper-slide__text {
+.p-top-voice__slide-text {
     margin-top: 2.7rem;
 
     @include pc {
@@ -80,7 +80,7 @@
     }
 }
 
-.swiper-slide__title {
+.p-top-voice__slide-title {
     font-size: 2.2rem;
     font-weight: 700;
     line-height: calc(33 / 22);
@@ -88,7 +88,7 @@
     text-align: center;
 }
 
-.swiper-slide__desc {
+.p-top-voice__slide-desc {
     margin-top: 1rem;
     font-size: 1.8rem;
     line-height: calc(30 / 18);
