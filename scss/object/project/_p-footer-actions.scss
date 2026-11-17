@@ -1,7 +1,8 @@
 @use '../../foundation/mixin' as *;
 
 .p-footer-actions {
-    --top-gap: 1.825rem;
+    --top-gap: 1.8rem;
+    --top-right: 2rem;
 
     position: fixed;
     bottom: 0;
@@ -19,7 +20,17 @@
     }
 
     @include pc {
-        --top-gap: 2.927rem;
+        --top-gap: 2.9rem;
+        --top-right: 11.6rem;
+    }
+
+    &--contact {
+        --top-right: 3rem;
+
+        @include pc {
+            --top-gap: 3rem;
+            --top-right: 10rem;
+        }
     }
 
     &.active {
@@ -41,15 +52,15 @@
         }
     }
 
+    &__inquiry--contact {
+        display: none;
+    }
+
     &__top {
         position: absolute;
         bottom: calc(100% + var(--top-gap));
-        right: 2rem;
+        right: var(--top-right);
         opacity: 1;
         visibility: inherit;
-
-        @include pc {
-            right: 11.6rem;
-        }
     }
 }

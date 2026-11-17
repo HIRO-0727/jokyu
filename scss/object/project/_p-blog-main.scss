@@ -73,6 +73,16 @@
         column-gap: 0.3rem;
     }
 
+    &__sns-link {
+        @include pc {
+            transition: opacity 0.4s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+
     &__intro {
         margin-top: 2.7rem;
 
@@ -175,7 +185,6 @@
     &__quote {
         margin-top: 2.0rem;
         width: 100%;
-        height: 20.8rem;
 
         display: flex;
         align-items: flex-start;
@@ -185,7 +194,6 @@
 
         @include pc {
             margin-top: 1.7rem;
-            height: 11.8rem;
             padding: 1.8rem 3rem 1rem;
             column-gap: 1rem;
             
@@ -196,7 +204,7 @@
         width: 2.7rem;
         height: auto;
         flex-shrink: 0;
-        padding-top: 0.485rem;
+        padding-top: 0.5rem;
 
         @include pc {
             padding-top: 0;

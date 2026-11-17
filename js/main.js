@@ -1,17 +1,22 @@
 "use strict";
 
 $(function() {
+    // ハンバーガーメニュー
+    const $button = $('.p-header__hamburger');
+    const $nav = $('.p-header__nav');
 
-    //ハンバーガーメニュー
+    function setMenuOpen(isOpen) {
+        $button.toggleClass('active', isOpen);
+        $nav.toggleClass('active', isOpen);
+        $button.attr('aria-expanded', String(isOpen));
+    }
 
-    $('.p-header__hamburger').click(function() {
-        $(this).toggleClass('active')
-        $('.p-header__nav').toggleClass('active')
-    })
+    $button.on('click', function() {
+        setMenuOpen($button.attr('aria-expanded') === 'false');
+    });
 
-    $('.p-header__nav ul li a').click(function() {
-        $('.p-header__hamburger').removeClass('active')
-        $('.p-header__nav').removeClass('active')
+    $nav.find('a').on('click', function() {
+        setMenuOpen(false);
     });
 });
 
@@ -19,7 +24,6 @@ $(function() {
 $(function() {
     const fv = document.querySelector('.p-top-fv, .c-fv');
     const $actions = $('.p-footer-actions');
-    const $standaloneTop = $('.c-top').not('.p-footer-actions__top');
 
     function updateFooterActions() {
         const isVisible = fv
@@ -27,7 +31,6 @@ $(function() {
             : window.scrollY > 100;
 
         $actions.toggleClass('active', isVisible);
-        $standaloneTop.toggleClass('active', isVisible);
     }
 
     $(window).on('scroll resize load', updateFooterActions);
@@ -49,44 +52,29 @@ $(function() {
 
     const scrollElement = $scroll[0];
 
+    // 表を横にスクロールできる距離
+    function getMaxScroll() {
+        return scrollElement.scrollWidth - scrollElement.clientWidth;
+    }
+
     // 表の位置をスライダーに反映
     function syncScrollControl() {
-        const maxScroll =
-            scrollElement.scrollWidth - scrollElement.clientWidth;
-
+        const maxScroll = getMaxScroll();
         const progress = maxScroll > 0
             ? scrollElement.scrollLeft / maxScroll * 100
             : 0;
 
-        $control.val(Math.max(0, Math.min(100, progress)));
+        $control.val(progress);
         $control.prop('disabled', maxScroll <= 0);
     }
 
     // スライダー操作を表に反映
     $control.on('input', function() {
-        const maxScroll = Math.max(
-            0,
-            scrollElement.scrollWidth - scrollElement.clientWidth
-        );
-
-        scrollElement.scrollLeft =
-            maxScroll * Number(this.value) / 100;
+        scrollElement.scrollLeft = getMaxScroll() * this.valueAsNumber / 100;
     });
 
-    // 指やキーボードで表を動かした場合も連動
     $scroll.on('scroll', syncScrollControl);
-
-    // 画面幅や表のサイズが変わったら再計算
-    const resizeObserver = new ResizeObserver(syncScrollControl);
-
-    resizeObserver.observe(scrollElement);
-
-    const tableElement =
-            scrollElement.querySelector('.p-plan-monthly__table');
-
-    if (tableElement) {
-        resizeObserver.observe(tableElement);
-    }
+    $(window).on('resize', syncScrollControl);
 
     syncScrollControl();
 });

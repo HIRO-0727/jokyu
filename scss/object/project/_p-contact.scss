@@ -81,11 +81,25 @@
 
     }
 
-    &__input {
+    &__input-wrap {
         width: 100%;
 
         @include pc {
             flex: 1;
+        }
+    }
+
+    &__input {
+        height: 4rem;
+        border: solid #808080 1px;
+        width: 100%;
+        padding-inline: 2rem;
+        font-size: 1.5rem;
+        line-height: calc(33 / 15);
+
+        &::placeholder {
+            color: #b2b2b2;
+            opacity: 1;
         }
     }
 
@@ -175,6 +189,13 @@
         }
     }
 
+    &__checktext {
+        @include pc {
+            position: relative;
+            top: -0.4rem;
+        }
+    }
+
     &__contents-02 {
         margin-top: 1.4rem;
 
@@ -261,30 +282,3 @@
         }
     }
 }
-
-input[type="text"],
-input[type="tel"],
-input[type="email"] {
-    // background-color: #fff;
-    height: 4rem;
-    border: solid #808080 1px;
-    width: 100%;
-    padding-inline: 2rem;
-    font-size: 1.5rem;
-    line-height: calc(33 / 15);
-
-    &::placeholder {
-        color: #b2b2b2;
-        opacity: 1;
-    }
-}
-
-
-
-
-
-
-
-
-
-

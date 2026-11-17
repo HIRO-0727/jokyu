@@ -63,7 +63,7 @@
     &__arrow {
         position: absolute;
         top: 0;
-        left: calc(50% + 0.05rem);
+        left: calc(50% + 0.1rem);
         transform: translateX(-50%);
         width: 3.1rem;
         height: auto;
@@ -71,7 +71,7 @@
         z-index: 1;
 
         @include pc {
-            width: 3.162rem;
+            width: 3.2rem;
         }
     }
 

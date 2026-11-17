@@ -34,13 +34,11 @@
                         </span>
                     </a>
                 </div>
-                <div class="p-header__hamburger sp">
-                    <div class="p-header__hamburger-inner">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
+                <button type="button" class="p-header__hamburger sp" aria-label="メニュー" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </button>
                 <nav class="l-header__nav p-header__nav">
                     <ul>
                         <li class="p-header__nav-item">
@@ -59,7 +57,7 @@
                 </nav>
             </div>
         </header>
-        <main class="l-main">
+        <main class="l-main p-plan">
             <!-- FVセクション -->
             <div class="c-fv">
                 <div class="c-fv__image">
@@ -312,7 +310,7 @@
 
         <footer>
             <div class="l-footer p-footer">
-                <div class="l-inner">
+                <div class="l-inner l-inner--fixed-sp">
                     <div class="p-footer__contents">
                         <!-- ナビゲーション設置 -->
                         <nav class="p-footer__nav">
