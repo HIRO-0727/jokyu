@@ -19,7 +19,6 @@ $(function() {
 $(function() {
     const fv = document.querySelector('.p-top-fv, .c-fv');
     const $actions = $('.p-footer-actions');
-    const $standaloneTop = $('.c-top').not('.p-footer-actions__top');
 
     function updateFooterActions() {
         const isVisible = fv
@@ -27,7 +26,6 @@ $(function() {
             : window.scrollY > 100;
 
         $actions.toggleClass('active', isVisible);
-        $standaloneTop.toggleClass('active', isVisible);
     }
 
     $(window).on('scroll resize load', updateFooterActions);

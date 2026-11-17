@@ -52,28 +52,6 @@
         right: 11.6rem;
     }
 
-    &--2 {
-        --viewport-bottom: 2rem;
-        --page-end-bottom: 32.1rem;
-
-        display: block;
-        position: sticky;
-        bottom: var(--viewport-bottom);
-        right: auto;
-        margin-left: auto;
-        margin-right: 3rem;
-
-        // ページ全体の高さを保ったまま、最下部でのボタンの位置を合わせる
-        margin-top: calc(0px - var(--page-end-bottom) - $top-size);
-        margin-bottom: var(--page-end-bottom);
-
-        @include pc {
-            --viewport-bottom: 3rem;
-            --page-end-bottom: 30.4rem;
-            margin-right: 10rem;
-        }
-    }
-
     &.active {
         opacity: 1;
         visibility: visible;
