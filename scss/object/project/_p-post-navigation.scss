@@ -17,7 +17,7 @@
     }
 
     &__label {
-        width: 15.6rem;
+        // width: 15.6rem;
         height: 3.7rem;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
@@ -36,10 +36,11 @@
         }
 
         &--next {
-            padding-left: 4.8rem;
+            justify-content: flex-end;
+            padding-right: 2rem;
 
             @include pc {
-                padding-left: 15.2rem;
+                // padding-left: 15.2rem;
             }
         }
     }
@@ -56,7 +57,7 @@
 
     &__title {
         margin-top: 1.5rem;
-        width: 15.6rem;
+        // width: 15.6rem;
         height: 6.8rem;
         line-height: calc(25 / 16);
         font-weight: 700;
@@ -71,7 +72,12 @@
     }
 
     &__item {
+        flex: 1;
+        min-width: 0;
+
         @include pc {
+            flex: 0 1 auto;
+            min-width: auto;
             transition: opacity 0.4s;
 
             &:hover {

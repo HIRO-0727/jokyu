@@ -12,16 +12,12 @@
 }
 
 .p-top-voice__slider {
-    --voice-image-height: calc(33.5rem * 200 / 335);
-
     position: relative;
     margin-top: 3.9rem;
 
     @include pc {
-        --voice-image-height: 19rem;
         margin-top: 3.6rem;
     }
-    
 }
 
 .p-top-voice .p-top-voice__slide {
@@ -50,9 +46,18 @@
     }
 }
 
+.p-top-voice .p-top-voice__slide-image,
+.p-top-voice__navigation {
+    aspect-ratio: 335 / 200;
+
+    @include pc {
+        aspect-ratio: auto;
+        height: 19rem;
+    }
+}
+
 .p-top-voice .p-top-voice__slide-image {
     position: relative;
-    height: var(--voice-image-height);
 
     img {
         position: absolute;
@@ -95,9 +100,17 @@
     color: #fff;
 }
 
+.p-top-voice__navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
 .p-top-voice__arrow {
     position: absolute;
-    top: calc(var(--voice-image-height) - 3.7rem - 3.0rem);
+    bottom: 15%;
     z-index: 2;
 
     display: block;
@@ -107,6 +120,11 @@
     border: 0;
     background: transparent;
     cursor: pointer;
+    pointer-events: auto;
+
+    @include pc {
+        bottom: 3rem;
+    }
 
     > img {
         display: block;
