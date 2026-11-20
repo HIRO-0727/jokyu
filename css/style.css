@@ -134,6 +134,11 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+@media (max-width: 375px) {
+  html {
+    font-size: 2.6666666667vw;
+  }
+}
 @media (min-width: 768px) and (max-width: 940px) {
   html {
     font-size: 1.0638297872vw;

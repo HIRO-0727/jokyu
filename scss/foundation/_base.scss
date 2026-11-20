@@ -9,7 +9,12 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
 
-    //リキッドレイアウトの設定
+    // 画面幅375px以下では、375pxを基準にremのサイズを調整
+    @media (max-width: 375px) {
+        font-size: vw(10, 375);
+    }
+
+    //PCでのリキッドレイアウトの設定
     @media (min-width: 768px) and (max-width: 940px) {
         // font-size: calc(10 / 940 * 100vw);
         font-size: vw(10, 940);
