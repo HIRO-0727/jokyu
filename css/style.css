@@ -1402,11 +1402,11 @@ img {
 }
 
 @media (min-width: 768px) {
-  .p-top-voice__slide {
-    -webkit-transition: opacity 0.4s;
-    transition: opacity 0.4s;
+  .p-top-voice__slide:hover .p-top-voice__slide-image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
-  .p-top-voice__slide:hover {
+  .p-top-voice__slide:hover .p-top-voice__slide-text {
     opacity: 0.7;
   }
 }
@@ -1436,10 +1436,6 @@ img {
   .p-top-voice .p-top-voice__slide-image {
     overflow: visible;
   }
-  .p-top-voice .p-top-voice__slide-image:hover img {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
 }
 
 .p-top-voice__slide-text {
@@ -1448,6 +1444,8 @@ img {
 @media (min-width: 768px) {
   .p-top-voice__slide-text {
     margin-top: 1.7rem;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
   }
 }
 
@@ -1671,9 +1669,15 @@ img {
 .p-top-faq__question {
   position: relative;
   width: 100%;
+  padding-right: 4.7rem;
   font: inherit;
   text-align: left;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .p-top-faq__question {
+    padding-right: 0;
+  }
 }
 .p-top-faq__question:focus-visible {
   outline: 2px solid currentColor;
@@ -1681,7 +1685,7 @@ img {
 }
 .p-top-faq__question::after {
   position: absolute;
-  top: 44%;
+  top: 50%;
   right: 1.4rem;
   display: block;
   content: "";
@@ -1693,6 +1697,8 @@ img {
       align-self: center;
   margin-left: auto;
   background: url(../img/01_top/faq-arrow-sp.svg) center/contain no-repeat;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out;
@@ -1700,13 +1706,12 @@ img {
 }
 @media (min-width: 768px) {
   .p-top-faq__question::after {
-    top: 45%;
     right: 2.6rem;
   }
 }
 .p-top-faq__question[aria-expanded=true]::after {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
+  -webkit-transform: translateY(-50%) rotate(-180deg);
+          transform: translateY(-50%) rotate(-180deg);
 }
 
 .p-top-faq__answer {
@@ -1735,10 +1740,16 @@ img {
 }
 
 .p-top-faq__text {
-  width: 23.3rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 0;
 }
 @media (min-width: 768px) {
   .p-top-faq__text {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
     font-size: 1.7rem;
     line-height: 1.7647058824;
     width: 72rem;

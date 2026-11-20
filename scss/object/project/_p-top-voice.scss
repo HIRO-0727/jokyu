@@ -38,13 +38,16 @@
 
 .p-top-voice__slide {
     @include pc {
-        transition: opacity 0.4s;
-
         &:hover {
-            opacity: 0.7;
+            .p-top-voice__slide-image img {
+                transform: scale(1.1);
+            }
+
+            .p-top-voice__slide-text {
+                opacity: 0.7;
+            }
         }
     }
-    
 }
 
 .p-top-voice .p-top-voice__slide-image {
@@ -65,10 +68,6 @@
 
     @include pc {
         overflow: visible;
-
-        &:hover img {
-            transform: scale(1.1);
-        }
     }
 }
 
@@ -77,6 +76,7 @@
 
     @include pc {
         margin-top: 1.7rem;
+        transition: opacity 0.4s;
     }
 }
 
