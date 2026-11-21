@@ -163,11 +163,6 @@
             width: 34rem;
         }
 
-        &--next {
-            @include pc {
-                padding-left: 23.2rem;
-            }
-        }
     }
 
     &__navigation-title {

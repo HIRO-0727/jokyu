@@ -8,11 +8,12 @@
 .p-footer__nav-list {
     padding-inline: 2.1rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     column-gap: 3rem;
 
     @include pc {
         padding-inline: 28.9rem;
+        justify-content: space-between;
     }
 }
 

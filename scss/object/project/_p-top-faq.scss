@@ -37,9 +37,14 @@
 .p-top-faq__question {
     position: relative;
     width: 100%;
+    padding-right: 4.7rem;
     font: inherit;
     text-align: left;
     cursor: pointer;
+
+    @include pc {
+        padding-right: 0;
+    }
 
     &:focus-visible {
         outline: 2px solid currentColor;
@@ -48,7 +53,7 @@
 
     &::after {
         position: absolute;
-        top: 44%;
+        top: 50%;
         right: 1.4rem;
         display: block;
         content: "";
@@ -59,16 +64,16 @@
         margin-left: auto;
         background: url(../img/01_top/faq-arrow-sp.svg)
             center / contain no-repeat;
+        transform: translateY(-50%);
         transition: transform 0.4s ease-in-out;
 
         @include pc {
-            top: 45%;
             right: 2.6rem;
         }
     }
 
     &[aria-expanded="true"]::after {
-        transform: rotate(-180deg);
+        transform: translateY(-50%) rotate(-180deg);
     }
 }
 
@@ -95,9 +100,11 @@
 }
 
 .p-top-faq__text {
-    width: 23.3rem;
+    flex-grow: 1;
+    min-width: 0;
 
     @include pc {
+        flex-grow: 0;
         font-size: 1.7rem;
         line-height: calc(30 / 17);
         width: 72rem;
